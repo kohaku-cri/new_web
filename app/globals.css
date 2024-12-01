@@ -1,32 +1,38 @@
 :root {
-  --yellow: #ECF097;
-  --green: #97D491;
-  --red: #E04942;
-  --white: #dddddd;
+  --yellow: #ecf097;
+  --green: #70ac6a;
+  --red: #e04942;
+  --white: #e6e7e8;
   --black: #202020;
 }
 
 body {
-  color: var(--black);
-  background: var(--white);
+  color: var(--white);
+  background: var(--black);
   font-family: Arial, Helvetica, sans-serif;
   padding: 0;
   margin: 0;
   text-align: center;
 }
-body h1{
+body h1 {
   padding: 0;
   margin: 0;
   font-family: "Potta";
   font-size: 32px;
 }
-body h2{
+body h2 {
   padding: 0;
   margin: 0;
   font-family: "NotoSansJPBold";
   font-size: 25px;
 }
-p{
+p {
   padding: 0;
   margin: 0;
+}
+a {
+  font-family: "NotoSansJPBold";
+  text-decoration: none;
+  color: var(--white);
+  font-size: 20px;
 }
