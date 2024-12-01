@@ -12,7 +12,7 @@
   border-bottom: 1px solid var(--white);
 }
 .sanserif {
-  font-family: "NotoSansJPReg";
+  font-family: "NotoserifJP";
 }
 .newMapDescription {
   margin-top: 10px;
@@ -24,7 +24,7 @@
   align-items: center;
 }
 .LinkButton {
-  padding: 15px 40px;
+  padding: 10px 30px;
   background-color: var(--red);
   border-radius: 30px;
   margin-top: 20px;

@@ -1,13 +1,15 @@
 import localFont from "next/font/local";
 import "./globals.css";
 import {Snow} from "../components/Snow";
+import style from "../components/Footer/Footer.module.css"
+import { Footer } from "../components/Footer/Footer";
 
-const NotoSansJPBold = localFont({
+const NotoSansJP = localFont({
   src: "./fonts/NotoSansJP-SemiBold.ttf",
   variable: "--font-geist-sans",
   weight: "100 900",
 });
-const NotoSansJPReg = localFont({
+const NotoserifJP = localFont({
   src: "./fonts/NotoSerifJP-Regular.ttf",
   variable: "--font-geist-mono",
   weight: "100 900",
@@ -28,6 +30,8 @@ export default function RootLayout({
       <body>
         <Snow />
         {children}
+        <Footer />
+        <p className={style.copyRight}>© 2024 <cite translate="no"> こはく kohaku</cite></p>
         </body>
     </html>
   );

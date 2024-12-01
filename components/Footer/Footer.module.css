@@ -1,0 +1,43 @@
+.copyRight {
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+.links div {
+  display: flex;
+  justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+.youtube {
+  background-color: #a61922;
+  border-radius: 20px;
+  padding: 14px 50px;
+  margin: 0 10px;
+  font-size: 13px;
+  font-family: "potta";
+}
+.twitter {
+  background-color: #0f1419;
+  border-radius: 20px;
+  padding: 14px 50px;
+  margin: 0 10px;
+  font-size: 13px;
+  font-family: "potta";
+}
+.bluesky {
+  background-color: #1185fe;
+  border-radius: 20px;
+  padding: 14px 50px;
+  margin: 0 10px;
+  font-size: 13px;
+  font-family: "potta";
+}
+.crafter {
+  background-color: #ed9c4c;
+  border-radius: 20px;
+  padding: 14px 50px;
+  margin: 0 10px;
+  font-size: 13px;
+  font-family: "potta";
+  
+}
