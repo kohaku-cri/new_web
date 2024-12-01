@@ -25,6 +25,9 @@ export default function Home() {
             <div className={style.newsPlace}></div>
           </div>
         </div>
+        <div className={style.mapList}>
+          <h1>過去作</h1>
+        </div>
       </div>
     </>
   );
