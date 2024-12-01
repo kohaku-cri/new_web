@@ -7,17 +7,23 @@ export default function Home() {
       <header></header>
 
       <div className={style.main}>
-        <h1 className={style.topTitle}>｜新作情報｜</h1>
-        <div className={style.newMap}>
-          <img
-            src="/img/8.jpg"
-            alt="魔法使いと空の孤島 マインクラフト脱出マップ"
-          />
-          <h2 className={style.newMapName}>魔法使いと空の孤島</h2>
-          <p className={`${style.sanserif} ${style.newMapDescription}`}>
-            ハロウィンマップ第２弾
-          </p>
-          <ListButton url="https://www.google.com/" />
+        <div className={style.topElement}>
+          <div className={style.newMap}>
+            <h1>｜新作情報｜</h1>
+            <img
+              src="/img/8.jpg"
+              alt="魔法使いと空の孤島 マインクラフト脱出マップ"
+            />
+            <h2 className={style.newMapName}>魔法使いと空の孤島</h2>
+            <p className={`${style.sanserif} ${style.newMapDescription}`}>
+              ハロウィンマップ第２弾
+            </p>
+            <ListButton url="https://www.google.com/" />
+          </div>
+          <div className={style.news}>
+            <h1>｜お知らせ｜</h1>
+            <div className={style.newsPlace}></div>
+          </div>
         </div>
       </div>
     </>

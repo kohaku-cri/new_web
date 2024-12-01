@@ -2,11 +2,9 @@
   border-radius: 2px;
   box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.521);
   margin-top: 40px;
-  width: 416px;
+  width: 380px;
 }
-.topTitle {
-  margin-top: 50px;
-}
+/* 新着情報 */
 .newMapName {
   padding: 10px 20px;
   border-bottom: 1px solid var(--white);
@@ -28,4 +26,20 @@
   background-color: var(--red);
   border-radius: 30px;
   margin-top: 20px;
+}
+
+/* 新着とお知らせを横並びにする */
+.topElement {
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+}
+
+.newsPlace{
+  width: 540px;
+  margin: 0 40px;
+  margin-top: 40px;
+  height: 300px;
+  background-color: var(--white);
+
 }
