@@ -1,6 +1,6 @@
 import localFont from "next/font/local";
 import "./globals.css";
-import Snow from "../components/Snow";
+import {Snow} from "../components/Snow";
 
 const NotoSansJPBold = localFont({
   src: "./fonts/NotoSansJP-SemiBold.ttf",
