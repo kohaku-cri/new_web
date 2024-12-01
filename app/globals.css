@@ -15,7 +15,18 @@ body {
   text-align: center;
 }
 body h1{
+  padding: 0;
+  margin: 0;
   font-family: "Potta";
+  font-size: 32px;
+}
+body h2{
+  padding: 0;
+  margin: 0;
+  font-family: "NotoSansJPBold";
+  font-size: 25px;
+}
+p{
   padding: 0;
   margin: 0;
 }
