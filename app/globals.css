@@ -1,21 +1,21 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --yellow: #ECF097;
+  --green: #97D491;
+  --red: #E04942;
+  --white: #dddddd;
+  --black: #202020;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
+  color: var(--black);
+  background: var(--white);
   font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+body h1{
+  font-family: "Potta";
+  padding: 0;
+  margin: 0;
 }
