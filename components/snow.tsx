@@ -2,7 +2,7 @@
 
 import Snowfall from 'react-snowfall';
 
-export default function Snow() {
+export function Snow() {
   return (
       <Snowfall style={{
         position: 'fixed',
