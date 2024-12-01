@@ -1,5 +1,6 @@
 import localFont from "next/font/local";
 import "./globals.css";
+import Snow from "../components/snow";
 
 const NotoSansJPBold = localFont({
   src: "./fonts/NotoSansJP-SemiBold.ttf",
@@ -25,8 +26,9 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <body>
+        <Snow />
         {children}
-      </body>
+        </body>
     </html>
   );
 }
