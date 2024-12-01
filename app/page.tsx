@@ -4,8 +4,10 @@ import { ListButton } from "../components/LinkButton";
 export default function Home() {
   return (
     <>
+    <head>
+      <title>ホーム│こはく脱出マップ配布所</title>
+    </head>
       <header></header>
-
       <div className={style.main}>
         <div className={style.topElement}>
           <div className={style.newMap}>
