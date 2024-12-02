@@ -1,5 +1,8 @@
+import { MapList } from "@/components/MapList/MapList";
 import style from "../components/index/index.module.css";
 import { ListButton } from "../components/LinkButton";
+import { mapdata, imgSize } from "../components/MapList/MapData";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -8,13 +11,15 @@ export default function Home() {
         <div className={style.topElement}>
           <div className={style.newMap}>
             <h1>｜新作情報｜</h1>
-            <img
-              src="/img/8.jpg"
-              alt="魔法使いと空の孤島 マインクラフト脱出マップ"
+            <Image
+              width={imgSize.width}
+              height={imgSize.height}
+              src={mapdata[0].mapImgLink}
+              alt={mapdata[0].alt}
             />
-            <h2 className={style.newMapName}>魔法使いと空の孤島</h2>
+            <h2 className={style.newMapName}>{mapdata[0].mapName}</h2>
             <p className={`${style.sanserif} ${style.newMapDescription}`}>
-              ハロウィンマップ第２弾
+              {mapdata[0].description}
             </p>
             <ListButton url="https://www.google.com/" />
           </div>
@@ -25,6 +30,7 @@ export default function Home() {
         </div>
         <div className={style.mapList}>
           <h1>過去作</h1>
+          <MapList />
         </div>
       </div>
     </>
