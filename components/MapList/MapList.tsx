@@ -17,7 +17,7 @@ export function MapList() {
                 alt={item.alt}
               />
               <h2>{item.mapName}</h2>
-              <p>{item.description}</p>
+              {/* <p>{item.description}</p> */}
               <Link href={item.link}>詳しく見る</Link>
             </div>
           </div>

@@ -18,9 +18,9 @@ export default function Home() {
               alt={mapdata[0].alt}
             />
             <h2 className={style.newMapName}>{mapdata[0].mapName}</h2>
-            <p className={`${style.sanserif} ${style.newMapDescription}`}>
+            {/* <p className={`${style.sanserif} ${style.newMapDescription}`}>
               {mapdata[0].description}
-            </p>
+            </p> */}
             <ListButton url="https://www.google.com/" />
           </div>
           <div className={style.news}>
