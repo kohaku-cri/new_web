@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export function MapList() {
   return (
-    <>
+    <div>
       {mapdata.map((item) => {
         return (
           <div className={style.mapList}>
@@ -23,6 +23,6 @@ export function MapList() {
           </div>
         );
       })}
-    </>
+    </div>
   );
 }
