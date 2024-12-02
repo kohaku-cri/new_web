@@ -33,7 +33,7 @@ export default function RootLayout({
       </head>
       <body>
         <Snow />
-        <Header />
+        {/* <Header /> */}
         {children}
         <Footer />
         <p className={style.copyRight}>
