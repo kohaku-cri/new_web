@@ -1,6 +1,6 @@
 import { MapList } from "@/components/MapList/MapList";
 import style from "../components/index/index.module.css";
-import { ListButton } from "../components/LinkButton";
+import { ListButton } from "../components/Button/LinkButton";
 import { mapdata, imgSize } from "../components/MapList/MapData";
 import Image from "next/image";
 
@@ -21,7 +21,7 @@ export default function Home() {
             {/* <p className={`${style.sanserif} ${style.newMapDescription}`}>
               {mapdata[0].description}
             </p> */}
-            <ListButton url="https://www.google.com/" />
+            <ListButton url={mapdata[0].link} />
           </div>
           <div className={style.news}>
             <h1>｜お知らせ｜</h1>

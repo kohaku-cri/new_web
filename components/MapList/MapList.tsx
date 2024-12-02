@@ -1,8 +1,7 @@
-import Link from "next/link";
 import style from "./MapList.module.css";
 import { mapdata, imgSize } from "./MapData";
 import Image from "next/image";
-import indexCss from "../index/index.module.css"
+import { ListButton } from "../Button/LinkButton";
 
 export function MapList() {
   return (
@@ -19,7 +18,7 @@ export function MapList() {
               />
               <h2>{item.mapName}</h2>
               {/* <p>{item.description}</p> */}
-              <Link href={item.link} className={indexCss.LinkButton}>詳しく見る</Link>
+              <ListButton url={item.link}/>
             </div>
           </div>
         );
