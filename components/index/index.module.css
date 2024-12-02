@@ -23,17 +23,24 @@
 /* 新着とお知らせを横並びにする */
 .topElement {
   display: flex;
-  margin-top: 50px;
   justify-content: center;
   flex-wrap: wrap;
 }
-
+.topElement h1 {
+  margin-top: 50px;
+}
+/* お知らせ */
 .newsPlace {
   width: 540px;
   margin: 0 40px;
   margin-top: 40px;
   height: 300px;
   background-color: var(--white);
+}
+@media screen and (max-width:640px) {
+  .newsPlace{
+    width: 300px;
+  }
 }
 
 /* 過去作一覧 */

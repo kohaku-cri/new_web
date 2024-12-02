@@ -5,8 +5,18 @@
 .links div {
   display: flex;
   justify-content: center;
-    margin-top: 300px;
-    margin-bottom: 40px;
+  margin-top: 300px;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 800px) {
+  .links div {
+    flex-flow: column;
+    margin-bottom: 20px;
+  }
+  .links a{
+    margin: 0 5%;
+    margin-bottom: 30px;
+  }
 }
 .youtube {
   background-color: #a61922;
@@ -39,21 +49,20 @@
   margin: 0 10px;
   font-size: 13px;
   font-family: "potta";
-  
 }
-.youtube:hover{
+.youtube:hover {
   background-color: #91161e;
   transition: 0.3s;
 }
-.twitter:hover{
+.twitter:hover {
   background-color: #0b0e11;
   transition: 0.3s;
 }
-.bluesky:hover{
+.bluesky:hover {
   background-color: #0b77e9;
   transition: 0.3s;
 }
-.crafter:hover{
+.crafter:hover {
   background-color: #d38a41;
   transition: 0.3s;
 }
