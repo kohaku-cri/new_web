@@ -41,3 +41,19 @@
   font-family: "potta";
   
 }
+.youtube:hover{
+  background-color: #91161e;
+  transition: 0.3s;
+}
+.twitter:hover{
+  background-color: #0b0e11;
+  transition: 0.3s;
+}
+.bluesky:hover{
+  background-color: #0b77e9;
+  transition: 0.3s;
+}
+.crafter:hover{
+  background-color: #d38a41;
+  transition: 0.3s;
+}

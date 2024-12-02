@@ -20,13 +20,16 @@
   justify-content: center;
   align-items: center;
 }
-.LinkButton {
+.LinkButton a {
   padding: 10px 30px;
   background-color: var(--red);
   border-radius: 30px;
   margin-top: 20px;
+  display: inline-block;
 }
-
+.LinkButton a :hover {
+  background-color: var(--green);
+}
 /* 新着とお知らせを横並びにする */
 .topElement {
   display: flex;
@@ -34,16 +37,15 @@
   justify-content: center;
 }
 
-.newsPlace{
+.newsPlace {
   width: 540px;
   margin: 0 40px;
   margin-top: 40px;
   height: 300px;
   background-color: var(--white);
-
 }
 
 /* 過去作一覧 */
-.mapList{
+.mapList {
   margin-top: 100px;
 }

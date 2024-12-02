@@ -3,10 +3,10 @@ import style from "../components/index/index.module.css";
 
 export function ListButton(props: any) {
   return (
-    <>
-      <Link href={props.url} className={style.LinkButton}>
+    <div className={style.LinkButton}>
+      <Link href={props.url}>
         詳しく見る
       </Link>
-    </>
+    </div>
   );
 }
