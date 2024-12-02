@@ -1,0 +1,17 @@
+.mapList a {
+  padding: 10px 30px;
+  background-color: var(--red);
+  border-radius: 30px;
+  margin-top: 20px;
+  display: inline-block;
+}
+.mapList h2 {
+  border-bottom: 1px solid var(--white);
+  padding: 10px 20px;
+}
+.mapList div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
