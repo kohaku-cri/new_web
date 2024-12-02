@@ -75,6 +75,6 @@ export const mapdata: MapItem[] = [
   },
 ];
 export const imgSize = {
-  width: 380,
-  height: 214,
+  width: 340,
+  height: 191,
 };
