@@ -32,8 +32,8 @@ export default function RootLayout({
       <link rel="icon" href="/img/favicon.svg" />
       </head>
       <body>
-        <Snow />
-        {/* <Header /> */}
+        {/* <Snow /> */}
+        <Header />
         {children}
         <Footer />
         <p className={style.copyRight}>
