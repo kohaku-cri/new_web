@@ -1,7 +1,13 @@
-.main{
-    margin-top: 20vh;
-    margin-bottom: 55vh;
+.main {
+  margin-top: 20vh;
+  margin-bottom: 55vh;
 }
-.margin{
-    margin-bottom: 30px;
+.margin {
+  margin-bottom: 30px;
+}
+.main a {
+  margin-top: 50px;
+  padding: 20px 40px;
+  background-color: var(--buttonColor);
+  border-radius: 30px;
 }
