@@ -3,6 +3,7 @@ import style from "../components/index/index.module.css";
 import { ListButton } from "../components/Button/LinkButton";
 import { mapdata, imgSize } from "../components/MapList/MapData";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -21,11 +22,33 @@ export default function Home() {
             {/* <p className={`${style.sanserif} ${style.newMapDescription}`}>
               {mapdata[0].description}
             </p> */}
-            <ListButton url={mapdata[0].link} title="詳しく見る"/>
+            <ListButton url={mapdata[0].link} title="詳しく見る" />
           </div>
           <div className={style.news}>
             <h1>｜お知らせ｜</h1>
-            <div className={style.newsPlace}></div>
+            <div className={style.newsPlace}>
+              <div>
+                <Link href="" className={style.fixationNew}>お知らせとは...？</Link>
+                <Link href="" className={style.new}>
+                  2024/12/4 ・サイトの更新情報まとめ
+                </Link>
+                <Link href="" className={style.new}>
+                  2024/12/4 ・サイトの更新情報まとめ
+                </Link>
+                <Link href="" className={style.new}>
+                  2024/12/4 ・サイトの更新情報まとめ
+                </Link>
+                <Link href="" className={style.new}>
+                  2024/12/4 ・サイトの更新情報まとめ
+                </Link>
+                <Link href="" className={style.new}>
+                  2024/12/4 ・サイトの更新情報まとめ
+                </Link>
+                <Link href="" className={style.new}>
+                  2024/12/4 ・サイトの更新情報まとめ
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
         <div className={style.mapList}>

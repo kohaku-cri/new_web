@@ -5,6 +5,7 @@
   --white: #e6e7e8;
   --black: #202020;
   --gray: #494949;
+  --lightBlue: #1E99AA;
 
   --buttonColor: var(--red);
   --buttonHoverColor: var(--green);
@@ -30,6 +31,9 @@ body h2 {
   margin: 0;
   font-family: "NotoSansJP";
   font-size: 25px;
+}
+body h3 {
+  font-family: "NotoSansJP";
 }
 p {
   padding: 0;
