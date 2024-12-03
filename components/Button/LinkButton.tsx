@@ -5,7 +5,7 @@ export function ListButton(props: any) {
   return (
     <div>
       <Link href={props.url} className={style.LinkButton}>
-        詳しく見る
+        {props.title}
       </Link>
     </div>
   );

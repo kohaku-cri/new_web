@@ -21,7 +21,7 @@ export default function Home() {
             {/* <p className={`${style.sanserif} ${style.newMapDescription}`}>
               {mapdata[0].description}
             </p> */}
-            <ListButton url={mapdata[0].link} />
+            <ListButton url={mapdata[0].link} title="詳しく見る"/>
           </div>
           <div className={style.news}>
             <h1>｜お知らせ｜</h1>
