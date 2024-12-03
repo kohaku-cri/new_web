@@ -7,6 +7,7 @@
   --gray: #494949;
 
   --buttonColor: var(--red);
+  --buttonHoverColor: var(--green);
   --backgroundColor: var(--black);
   --colorColor: var(--white);
 }
