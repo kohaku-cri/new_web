@@ -1,6 +1,6 @@
 .LinkButton {
   padding: 10px 30px;
-  background-color: var(--red);
+  background-color: var(--buttonColor);
   border-radius: 30px;
   margin-top: 20px;
   display: inline-block;

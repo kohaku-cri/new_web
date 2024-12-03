@@ -4,13 +4,16 @@
   --red: #c2443d;
   --white: #e6e7e8;
   --black: #202020;
-  --darkBlack: #1a1a1a;
-  --gray: #5c5c5c;
+  --gray: #494949;
+
+  --buttonColor: var(--red);
+  --backgroundColor: var(--black);
+  --colorColor: var(--white);
 }
 
 body {
-  color: var(--white);
-  background: var(--black);
+  color: var(--colorColor);
+  background: var(--backgroundColor);
   padding: 0;
   margin: 0;
   text-align: center;
@@ -35,6 +38,6 @@ p {
 a {
   font-family: "NotoSansJP";
   text-decoration: none;
-  color: var(--white);
+  color: var(--colorColor);
   font-size: 15px;
 }
