@@ -1,5 +1,5 @@
 import style from "./MapList.module.css";
-import { mapdata, imgSize } from "./MapData";
+import { mapdata, imgSize } from "@/public/dataBase/MapData";
 import Image from "next/image";
 import { ListButton } from "../Button/LinkButton";
 
@@ -16,7 +16,7 @@ export function MapList() {
               alt={item.alt}
             />
             <h2>{item.mapName}</h2>
-            <ListButton url={item.link} title="詳しく見る"/>
+            <ListButton url={item.link} title="詳しく見る" />
           </div>
         );
       })}

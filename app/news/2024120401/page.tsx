@@ -1,13 +1,6 @@
 import { ListButton } from "@/components/Button/LinkButton";
 import style from "@/components/news.module.css";
-
-type data = {
-  title:string;
-  date:number;
-}
-const newsData:data[] = [
-  {title:"サイトの更新情報まとめ",date:2024120401},
-]
+import {newsData} from "@/public/dataBase/newsData"
 
 export default function news() {
   return (

@@ -1,7 +1,7 @@
 import { MapList } from "@/components/MapList/MapList";
 import style from "../components/index/index.module.css";
 import { ListButton } from "../components/Button/LinkButton";
-import { mapdata, imgSize } from "../components/MapList/MapData";
+import { mapdata, imgSize } from "../public/dataBase/MapData";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -28,7 +28,9 @@ export default function Home() {
             <h1>｜お知らせ｜</h1>
             <div className={style.newsPlace}>
               <div>
-                <Link href="" className={style.fixationNew}>お知らせとは...？</Link>
+                <Link href="" className={style.fixationNew}>
+                  お知らせとは...？
+                </Link>
                 <Link href="" className={style.new}>
                   2024/12/4 ・サイトの更新情報まとめ
                 </Link>
