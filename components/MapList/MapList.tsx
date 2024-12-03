@@ -8,7 +8,7 @@ export function MapList() {
     <div className={style.mapList}>
       {mapdata.map((item) => {
         return (
-          <div className={style.map}>
+          <div className={style.map} key={item.id}>
             <Image
               src={item.mapImgLink}
               width={imgSize.width}
