@@ -14,5 +14,9 @@
   margin: 0 2vw;
   /* border-right: 2px solid var(--white);
   border-left: 2px solid var(--white); */
-  padding: 20px 30px;
+  padding: 10px 30px;
+}
+.link:hover{
+  border-bottom: 1px solid var(--colorColor);
+  transition: 0.3s;
 }
