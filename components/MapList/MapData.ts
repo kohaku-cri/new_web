@@ -33,7 +33,7 @@ export const mapdata: MapItem[] = [
     description: "また絶望の０を見る",
     mapImgLink: "/img/7.jpg",
     link: "/world/7",
-    alt: "",
+    alt: "教室10《8番出口オマージュ》 マインクラフト脱出マップ",
     id: randomUUID(),
   },
   {
@@ -41,7 +41,7 @@ export const mapdata: MapItem[] = [
     description: "メリークリスマス！",
     mapImgLink: "/img/6.jpg",
     link: "/world/6",
-    alt: "",
+    alt: "雪夜の山峡 マインクラフト脱出マップ",
     id: randomUUID(),
   },
   {
@@ -49,7 +49,7 @@ export const mapdata: MapItem[] = [
     description: "トリック・オア・トリック",
     mapImgLink: "/img/5.jpg",
     link: "/world/5",
-    alt: "",
+    alt: "ハロウィンハウスからの脱出 マインクラフト脱出マップ",
     id: randomUUID(),
   },
   {
@@ -57,7 +57,7 @@ export const mapdata: MapItem[] = [
     description: "どんな研究をしているのだろうか",
     mapImgLink: "/img/4.jpg",
     link: "/world/4",
-    alt: "",
+    alt: "謎めく研究所からの脱出 マインクラフト脱出マップ",
     id: randomUUID(),
   },
   {
@@ -65,7 +65,7 @@ export const mapdata: MapItem[] = [
     description: "騙すか 騙されるか",
     mapImgLink: "/img/3.jpg",
     link: "/world/3",
-    alt: "/world/3",
+    alt: "トロールMAP マインクラフト脱出マップ",
     id: randomUUID(),
   },
   {
@@ -73,16 +73,15 @@ export const mapdata: MapItem[] = [
     description: "THE 王道",
     mapImgLink: "/img/2.jpg",
     link: "/world/2",
-    alt: "",
+    alt: "とある民家からの脱出 マインクラフト脱出マップ",
     id: randomUUID(),
   },
-
   {
     mapName: "釣り人の記憶",
     description: "全ての始まり",
     mapImgLink: "/img/1.jpg",
     link: "/world/1",
-    alt: "",
+    alt: "釣り人の記憶 マインクラフト脱出マップ",
     id: randomUUID(),
   },
 ];
