@@ -1,13 +1,16 @@
+"use client";
 import { ListButton } from "@/components/Button/LinkButton";
 import style from "@/components/news.module.css";
-import {newsData} from "@/public/dataBase/newsData"
+import { newsData } from "@/public/dataBase/newsData";
+import { useParams } from "next/navigation";
 
-export default function news() {
+export default function News() {
+
   return (
     <div className={style.main}>
       <div>
         <div>
-          <h2>｜サイトの更新情報まとめ</h2>
+          <h2>｜タイトル</h2>
           <p>サイトの更新を行いました 変更点は以下の通りです</p>
           <h3>
             A. <span className={style.lightBlue}>追加</span>
