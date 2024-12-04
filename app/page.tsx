@@ -4,9 +4,11 @@ import { ListButton } from "../components/Button/LinkButton";
 import { mapdata, imgSize } from "../public/dataBase/MapData";
 import Image from "next/image";
 import Link from "next/link";
-import { newsData } from "@/public/dataBase/newsData"
+import { newsData } from "@/public/dataBase/newsData";
 
 export default function Home() {
+  const getNews = newsData.slice(0, 6);
+
   return (
     <>
       <div className={style.main}>
@@ -32,9 +34,13 @@ export default function Home() {
                 <Link href="" className={style.fixationNew}>
                   お知らせとは...？
                 </Link>
-                <Link href="" className={style.new}>
-                  2024/12/4 ・{newsData[0].title}
-                </Link>
+                {getNews.map((item) => {
+                  return (
+                    <Link href={`/news/${item.date}`} className={style.new}>
+                      {item.date} ・{item.title}
+                    </Link>
+                  );
+                })}
               </div>
             </div>
           </div>
