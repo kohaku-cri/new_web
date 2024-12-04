@@ -6,7 +6,6 @@ type MapItem = {
   mapImgLink: string;
   link: string;
   alt: string;
-  id: string;
 };
 
 export const mapdata: MapItem[] = [
@@ -15,9 +14,8 @@ export const mapdata: MapItem[] = [
   //   mapName: "魔法使いと空の孤島",
   //   description: "ハロウィンマップ第２弾",
   //   mapImgLink: "/img/8.jpg",
-  //   link: "a",
+  //   link: "/world/8",
   //   alt: "魔法使いと空の孤島 マインクラフト脱出マップ",
-  //   id:randomUUID(),
   // },
 
   {
@@ -26,7 +24,6 @@ export const mapdata: MapItem[] = [
     mapImgLink: "/img/8.jpg",
     link: "/world/8",
     alt: "魔法使いと空の孤島 マインクラフト脱出マップ",
-    id: randomUUID(),
   },
   {
     mapName: "教室10《8番出口オマージュ》",
@@ -34,7 +31,6 @@ export const mapdata: MapItem[] = [
     mapImgLink: "/img/7.jpg",
     link: "/world/7",
     alt: "教室10《8番出口オマージュ》 マインクラフト脱出マップ",
-    id: randomUUID(),
   },
   {
     mapName: "雪夜の山峡",
@@ -42,7 +38,6 @@ export const mapdata: MapItem[] = [
     mapImgLink: "/img/6.jpg",
     link: "/world/6",
     alt: "雪夜の山峡 マインクラフト脱出マップ",
-    id: randomUUID(),
   },
   {
     mapName: "ハロウィンハウスからの脱出",
@@ -50,7 +45,6 @@ export const mapdata: MapItem[] = [
     mapImgLink: "/img/5.jpg",
     link: "/world/5",
     alt: "ハロウィンハウスからの脱出 マインクラフト脱出マップ",
-    id: randomUUID(),
   },
   {
     mapName: "謎めく研究所からの脱出",
@@ -58,7 +52,6 @@ export const mapdata: MapItem[] = [
     mapImgLink: "/img/4.jpg",
     link: "/world/4",
     alt: "謎めく研究所からの脱出 マインクラフト脱出マップ",
-    id: randomUUID(),
   },
   {
     mapName: "トロールMAP",
@@ -66,7 +59,6 @@ export const mapdata: MapItem[] = [
     mapImgLink: "/img/3.jpg",
     link: "/world/3",
     alt: "トロールMAP マインクラフト脱出マップ",
-    id: randomUUID(),
   },
   {
     mapName: "とある民家からの脱出",
@@ -74,7 +66,6 @@ export const mapdata: MapItem[] = [
     mapImgLink: "/img/2.jpg",
     link: "/world/2",
     alt: "とある民家からの脱出 マインクラフト脱出マップ",
-    id: randomUUID(),
   },
   {
     mapName: "釣り人の記憶",
@@ -82,7 +73,6 @@ export const mapdata: MapItem[] = [
     mapImgLink: "/img/1.jpg",
     link: "/world/1",
     alt: "釣り人の記憶 マインクラフト脱出マップ",
-    id: randomUUID(),
   },
 ];
 export const imgSize = {

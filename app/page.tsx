@@ -30,7 +30,7 @@ export default function Home() {
           <div className={style.news}>
             <h1>｜お知らせ｜</h1>
             <div className={style.newsPlace}>
-              <div>
+              <div key="newsPlace">
                 <Link href="" className={style.fixationNew}>
                   お知らせとは...？
                 </Link>
