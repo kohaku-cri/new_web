@@ -20,3 +20,8 @@
 .lightBlue {
     color: var(--lightBlue);
 }
+@media screen and (max-width:800px) {
+  .main div{
+    margin: 0 20px;
+  } 
+}
