@@ -7,7 +7,8 @@ import Link from "next/link";
 import { newsData } from "@/public/dataBase/newsData";
 
 export default function Home() {
-  const getNews = newsData.slice(0, 6);
+  let getNews = newsData.slice(0, 6);
+  getNews = getNews.slice().reverse();
 
   return (
     <>
