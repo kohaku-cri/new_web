@@ -44,6 +44,7 @@
 }
 .newsPlace a:hover{
   border-bottom: 1px solid var(--colorColor);
+  transition: 0.3s;
 }
 .newsPlace div {
   width: 80%;
