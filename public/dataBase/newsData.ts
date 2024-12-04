@@ -1,8 +1,12 @@
 type data = {
   title: string;
-  date: number;
+  date: string;
 };
 export const newsData: data[] = [
-  { title: "もうすぐクリスマス！", date: 2024120402 },
-  { title: "サイトの更新情報まとめ", date: 2024120401 },
+  { title: "サイトの更新情報まとめ", date: "2024/12/04/01"},
 ];
+export const ReNews = newsData.map((item) => {
+  let dateData = item.date.replaceAll("/", "");
+
+});
+

@@ -4,6 +4,7 @@ import { ListButton } from "../components/Button/LinkButton";
 import { mapdata, imgSize } from "../public/dataBase/MapData";
 import Image from "next/image";
 import Link from "next/link";
+import { newsData } from "@/public/dataBase/newsData"
 
 export default function Home() {
   return (
@@ -32,22 +33,7 @@ export default function Home() {
                   お知らせとは...？
                 </Link>
                 <Link href="" className={style.new}>
-                  2024/12/4 ・サイトの更新情報まとめ
-                </Link>
-                <Link href="" className={style.new}>
-                  2024/12/4 ・サイトの更新情報まとめ
-                </Link>
-                <Link href="" className={style.new}>
-                  2024/12/4 ・サイトの更新情報まとめ
-                </Link>
-                <Link href="" className={style.new}>
-                  2024/12/4 ・サイトの更新情報まとめ
-                </Link>
-                <Link href="" className={style.new}>
-                  2024/12/4 ・サイトの更新情報まとめ
-                </Link>
-                <Link href="" className={style.new}>
-                  2024/12/4 ・サイトの更新情報まとめ
+                  2024/12/4 ・{newsData[0].title}
                 </Link>
               </div>
             </div>
