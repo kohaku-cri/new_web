@@ -1,4 +1,4 @@
-import style from "../components/error404.module.css";
+import style from "../components/error.module.css";
 import { ListButton } from "@/components/Button/LinkButton";
 
 export default function error404() {
