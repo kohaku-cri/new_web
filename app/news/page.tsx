@@ -1,14 +1,18 @@
-import { ListButton } from "@/components/Button/LinkButton";
 import style from "@/components/newsList.module.css";
 import { newsData } from "@/public/dataBase/newsData";
 import Link from "next/link";
 
-export default function New() {
-  return <div className={style.main}>
-    {newsData.map((item)=>{
-      return (
-        <Link href={`/news/${item.date}`}>{item.title}</Link>
-      )
-    })}
-  </div>;
+export default function News() {
+  return (
+    <div className={style.main}>
+      <h2>新着順</h2>
+      {newsData.map((item) => {
+        return (
+          <div>
+            <Link href={`/news/${item.date}`}>{item.date}・{item.title}</Link>
+          </div>
+        );
+      })}
+    </div>
+  );
 }
