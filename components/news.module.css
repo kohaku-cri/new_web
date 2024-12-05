@@ -8,20 +8,26 @@
   text-align: left;
   padding: 10px 0;
 }
-.main h2{
-    margin-bottom: 50px;
+.main h2 {
+  margin-bottom: 50px;
 }
 .red {
-    color: var(--red);
+  color: var(--red);
 }
 .green {
-    color: var(--green);
+  color: var(--green);
 }
 .lightBlue {
-    color: var(--lightBlue);
+  color: var(--lightBlue);
 }
-@media screen and (max-width:800px) {
-  .main div{
+@media screen and (max-width: 800px) {
+  .main div {
     margin: 0 20px;
-  } 
+  }
+}
+.marTop200 {
+  margin-top: 200px;
+}
+.marTop110 {
+  margin-top: 110px;
 }
