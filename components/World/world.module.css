@@ -3,8 +3,27 @@
   min-height: 100vh;
 }
 .youtube {
-  width: 560px;
-  height: 315px;
-  border-radius: 5px;
+  width: 45vw;
+  aspect-ratio: 16 / 9;
+  border-radius: 20px;
   border: none;
+}
+.test{
+
+}
+/* 他の作品一覧 */
+.otherMap {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+.otherMap div {
+  display: flex;
+  margin-bottom: 20px;
+}
+.otherMap h3 {
+  margin: 0 0;
+  margin-left: 5px;
+  width: 300px;
+  text-align: left;
 }
