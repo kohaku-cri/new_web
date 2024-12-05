@@ -19,8 +19,9 @@ export default function WhatIsNews() {
             <li>・制作日記や制作秘話</li>
             <li>・日記</li>
           </ul>
-          <h3  className={style.marTop40}>何故『お知らせ』を設置したのか</h3>
+          <h3  className={style.marTop40}>なぜ『お知らせ』を設置したのか</h3>
           <ul>
+<li>ちょっとしたお知らせを掲載するため</li>
             <li>・こはくさんの日本語力向上のため</li>
           </ul>
         </div>
