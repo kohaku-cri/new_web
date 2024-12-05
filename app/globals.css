@@ -5,7 +5,7 @@
   --white: #e6e7e8;
   --black: #202020;
   --gray: #494949;
-  --lightBlue: #1E99AA;
+  --lightBlue: #1e99aa;
 
   --buttonColor: var(--red);
   --buttonHoverColor: var(--green);
@@ -39,6 +39,15 @@ p {
   padding: 0;
   margin: 0;
   font-family: "NotoSansJP";
+}
+ul {
+  padding: 0;
+  margin: 0;
+  font-family: "NotoSansJP";
+  margin-top: 40px;
+}
+li{
+  list-style: none;
 }
 a {
   font-family: "NotoSansJP";

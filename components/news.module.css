@@ -12,6 +12,12 @@
 .main h2 {
   margin-bottom: 50px;
 }
+.main li {
+  margin-top: 15px;
+}
+.main ul {
+  margin-top: 10px;
+}
 .red {
   color: var(--red);
 }
@@ -31,4 +37,7 @@
 }
 .marTop110 {
   margin-top: 110px;
+}
+.marTop40{
+  margin-top: 40px;
 }

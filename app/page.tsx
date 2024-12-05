@@ -31,7 +31,7 @@ export default function Home() {
             <h1>｜お知らせ｜</h1>
             <div className={style.newsPlace}>
               <div>
-                <Link href="" className={style.fixationNew}>
+                <Link href="/news/WhatIsNews" className={style.fixationNew}>
                   お知らせとは...？
                 </Link>
                 {getNews.map((item) => {

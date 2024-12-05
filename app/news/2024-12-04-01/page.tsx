@@ -1,5 +1,4 @@
 "use client";
-import { ListButton } from "@/components/Button/LinkButton";
 import style from "@/components/news.module.css";
 import { newsData } from "@/public/dataBase/newsData";
 import { usePathname } from "next/navigation";
