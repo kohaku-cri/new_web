@@ -16,6 +16,7 @@
 }
 .newMapDescription {
   margin-top: 10px;
+  font-size: 13px;
 }
 .newMap {
   display: flex;
@@ -46,7 +47,7 @@
   margin-bottom: 20px;
   border-bottom: 1px solid var(--backgroundColor);
 }
-.newsPlace a:hover{
+.newsPlace a:hover {
   border-bottom: 1px solid var(--colorColor);
   transition: 0.3s;
 }
@@ -54,7 +55,7 @@
   width: 80%;
   text-align: left;
 }
-.fixationNew{
+.fixationNew {
   margin-top: 10px;
 }
 .new {

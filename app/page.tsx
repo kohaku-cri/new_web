@@ -22,9 +22,9 @@ export default function Home() {
               alt={mapdata[0].alt}
             />
             <h2 className={style.newMapName}>{mapdata[0].mapName}</h2>
-            {/* <p className={`${style.sanserif} ${style.newMapDescription}`}>
-              {mapdata[0].description}
-            </p> */}
+            <p className={style.newMapDescription}>
+              {mapdata[0].date}
+            </p>
             <ListButton url={mapdata[0].link} title="詳しく見る" />
           </div>
           <div className={style.news}>

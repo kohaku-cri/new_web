@@ -16,6 +16,7 @@ export function MapList() {
               alt={item.alt}
             />
             <h2>{item.mapName}</h2>
+            <p>{item.date}</p>
             <ListButton url={item.link} title="詳しく見る" />
           </div>
         );

@@ -13,6 +13,10 @@
   margin-right: 2%;
   margin-top: 70px;
 }
-.map h2{
+.map h2 {
   font-size: 19px;
+}
+.map p {
+  margin-top: 10px;
+  font-size: 13px;
 }
