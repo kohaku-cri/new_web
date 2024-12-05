@@ -1,5 +1,7 @@
 .main{
     margin-top: 110px;
+    min-height: 100vh;
+
 }
 .main a{
     margin-top: 20px;

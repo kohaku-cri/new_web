@@ -1,6 +1,6 @@
 .main {
   margin-top: 20vh;
-  margin-bottom: 55vh;
+  min-height: 80vh;
 }
 .margin {
   margin-bottom: 30px;

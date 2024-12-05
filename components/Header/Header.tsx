@@ -7,7 +7,7 @@ export function Header() {
       <Link href="/" className={style.link}>ホーム</Link>
       <Link href="" className={style.link}>情報</Link>
       <Link href="/news" className={style.link}>お知らせ</Link>
-      <Link href="" className={style.link}>ツール</Link>
+      <Link href="/tools" className={style.link}>ツール</Link>
 
     </div>
   );
