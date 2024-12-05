@@ -25,7 +25,6 @@ export default function News() {
           <p>・Next.js （React）</p>
           <h3 className={style.red}>〇 削除</h3>
           <p>・直に記述するHTML</p>
-          <p className={style.marTop110}>せっかくなので何が変わったのかについて少しまとめてみたいと思います</p>
         </div>
       </div>
     </div>
