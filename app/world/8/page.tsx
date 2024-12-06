@@ -11,33 +11,20 @@ export default function World() {
   const foundData = mapdata.find((item) => "/world/" + item.mapNum == pathName);
   return (
     <div className={style.main}>
-      <div className={style.youtube}>
-        <iframe
-          src="https://www.youtube.com/embed/nmF8JFw_GZI?si=j14rS4wTPfA5pnOT"
-          allowFullScreen
-        ></iframe>
-        <h2>
-          #{foundData?.mapNum} {foundData?.mapName}
-        </h2>
-      </div>
-      <div className={style.maps}>
-        {mapdata.map((item) => {
-          return (
-            <div className={style.mapList}>
-              <Link href={item.link}>
-                <div>
-                  <Image
-                    src={item.mapImgLink}
-                    alt={item.alt}
-                    width={aspect}
-                    height={aspect * 0.5625}
-                  />
-                  <h3>{item.mapName}</h3>
-                </div>
-              </Link>
-            </div>
-          );
-        })}
+      <div className={style.margin}>
+        <div className={style.mediaSection}>
+          <iframe
+            className={style.youtube}
+            src="https://www.youtube.com/embed/nmF8JFw_GZI?si=Nb6EYpFWQGzytzdq"
+            allowFullScreen
+          ></iframe>
+          <h2>
+            #{foundData?.mapNum} {foundData?.mapName}
+          </h2>
+          <div className={style.description}>
+          <p>公開日：{foundData?.date}</p>
+          </div>
+        </div>
       </div>
     </div>
   );

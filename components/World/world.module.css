@@ -1,47 +1,36 @@
 .main {
   margin-top: 110px;
   min-height: 100vh;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.main h3 {
-  margin: 0 0;
-}
-.main h2{
-  font-size: 22px;
-}
-.youtube {
   text-align: left;
 }
-.youtube iframe{
+.main h2 {
+  font-size: 20px;
+  margin-left: 5px
+}
+.margin {
+  margin: 0 10%;
+  height: 100vh;
+  /* background-color: black; */
+}
+.mediaSection {
   width: 55vw;
-  aspect-ratio: 16 / 9;
-  border-radius: 20px;
+}
+.youtube {
+  width: 100%;
+  aspect-ratio: 16/9;
+  border-radius: 10px;
   border: none;
 }
-/* 他の作品一覧 */
-.mapList div {
-  display: flex;
-  width: 500px;
-}
-.mapList h3{
-  margin-left: 10px;
-}
-.mapList img{
+/* 概要欄 */
+.description{
+  min-height: 140px;
+  background-color: var(--gray);
+  margin-top: 50px;
   border-radius: 5px;
+  padding: 5px;
 }
-.mapList {
-  display: inline-block;
-  margin-left: 70px;
-  margin-bottom: 5px;
-  margin-right: 60px;
-}
-.maps {
-  width: 500px;
-}
-/* @media screen and (max-width:1220px) {
-  .maps{
+/* 他の作品一覧 */
 
-  }
-} */
+@media screen and (max-width: 1220px) {
+
+}
