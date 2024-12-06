@@ -76,7 +76,8 @@ export const mapdata: Map[] = [
     date: "2023/9/2",
   },
 ];
+const aspect = 340;
 export const imgSize = {
-  width: 340,
-  height: 191,
+  width: aspect,
+  height: aspect * 0.5625,
 };

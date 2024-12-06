@@ -1,29 +1,46 @@
 .main {
   margin-top: 110px;
   min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.main h3 {
+  margin: 0 0;
 }
 .youtube {
-  width: 45vw;
+  text-align: left;
+}
+.youtube iframe{
+  width: 60vw;
   aspect-ratio: 16 / 9;
   border-radius: 20px;
   border: none;
-}
-.test{
-
+  margin-left: 40px;
 }
 /* 他の作品一覧 */
-.otherMap {
+.mapList div {
   display: flex;
-  flex-direction: column;
   width: 500px;
 }
-.otherMap div {
-  display: flex;
-  margin-bottom: 20px;
+.mapList h3{
+  margin-left: 10px;
 }
-.otherMap h3 {
-  margin: 0 0;
-  margin-left: 5px;
-  width: 300px;
-  text-align: left;
+.mapList img{
+  border-radius: 5px;
+}
+.mapList {
+  display: inline-block;
+  margin-left: 70px;
+  margin-bottom: 5px;
+  margin-right: 60px;
+}
+.maps {
+  width: 500px;
+}
+
+@media screen and (max-width:1220px) {
+  .maps{
+
+  }
 }
