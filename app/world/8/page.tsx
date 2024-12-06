@@ -1,10 +1,14 @@
+"use client";
 import style from "@/components/World/world.module.css";
 import { mapdata } from "@/public/dataBase/MapData";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export default function World() {
   const aspect = 168;
+  const pathName = usePathname();
+  const foundData = mapdata.find((item) => "/world/" + item.mapNum == pathName);
   return (
     <div className={style.main}>
       <div className={style.youtube}>
@@ -12,7 +16,9 @@ export default function World() {
           src="https://www.youtube.com/embed/nmF8JFw_GZI?si=j14rS4wTPfA5pnOT"
           allowFullScreen
         ></iframe>
-        <h2>タイトル</h2>
+        <h2>
+          #{foundData?.mapNum} {foundData?.mapName}
+        </h2>
       </div>
       <div className={style.maps}>
         {mapdata.map((item) => {

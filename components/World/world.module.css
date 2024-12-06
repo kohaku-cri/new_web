@@ -16,7 +16,6 @@
   aspect-ratio: 16 / 9;
   border-radius: 20px;
   border: none;
-  margin-left: 40px;
 }
 /* 他の作品一覧 */
 .mapList div {
@@ -39,8 +38,8 @@
   width: 500px;
 }
 
-@media screen and (max-width:1220px) {
+/* @media screen and (max-width:1220px) {
   .maps{
 
   }
-}
+} */
