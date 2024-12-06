@@ -8,11 +8,14 @@
 .main h3 {
   margin: 0 0;
 }
+.main h2{
+  font-size: 22px;
+}
 .youtube {
   text-align: left;
 }
 .youtube iframe{
-  width: 60vw;
+  width: 55vw;
   aspect-ratio: 16 / 9;
   border-radius: 20px;
   border: none;
@@ -37,7 +40,6 @@
 .maps {
   width: 500px;
 }
-
 /* @media screen and (max-width:1220px) {
   .maps{
 
