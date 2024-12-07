@@ -22,8 +22,29 @@ export default function World() {
             #{foundData?.mapNum} {foundData?.mapName}
           </h2>
           <div className={style.description}>
-          <p>公開日：{foundData?.date}</p>
+            <p>公開日：{foundData?.date}</p>
+            <div className={style.explain}>
+              <p>概要欄の説明文</p>
+            </div>
           </div>
+        </div>
+        <div className={style.maps}>
+          <h1 className={style.mapListTitle}>過去作</h1>
+          {mapdata.map((item) => {
+            return (
+              <div key={item.link}>
+                <Link href={item.link}>
+                  <Image
+                    src={item.mapImgLink}
+                    alt={item.alt}
+                    width={aspect}
+                    height={aspect * 0.5625}
+                  />
+                  <h3>{item.mapName}</h3>
+                </Link>
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>
