@@ -8,8 +8,11 @@ export default function Worlds() {
         <></>
       }
       //ヒントは⇩に記述
+      //title ・・・常に表示される文
+      //open　・・・クリックしたときに表示される文
       //hint = true・・・ヒントとして表示　※hintは省略可能（デフォルト値 true）
       //hint = false・・・答えとして表示
+      //img ・・・画像のリンクを入力（省略可能）　※imgの使用にはaltの入力が必要
       hint={[
         {
           title: "タイトル",
@@ -17,8 +20,9 @@ export default function Worlds() {
         },
         {
           title: "タイトル",
-          open: "中身",
           hint: false,
+          img: "@/public/img/6.jpg",
+
         },
       ]}
     />

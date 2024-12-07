@@ -39,7 +39,10 @@ export default function World(props: any) {
                     >
                       {item.title}
                     </summary>
-                    <p className={style.openText}>{item.open}</p>
+                    {item.open && (
+                      <p className={style.openText}>{item.open}</p>
+                    )}
+                    {item.img && (<Image src={item.img} alt={item.alt}/>)}
                   </details>
                 );
               })}

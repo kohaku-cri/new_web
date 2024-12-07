@@ -11,6 +11,8 @@
   --buttonHoverColor: var(--green);
   --backgroundColor: var(--black);
   --colorColor: var(--white);
+  --hintColor: var(--green);
+  --answerColor: var(--red);
 }
 details {
   font-family: "NotoSansJP";

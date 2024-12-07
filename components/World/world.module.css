@@ -44,7 +44,7 @@
   margin-bottom: 20px;
 }
 .openText{
-  margin-left: 20px;
+  margin-left: 30px;
 }
 
 .hints summary {
@@ -52,6 +52,7 @@
   padding: 10px 20px;
   border-radius: 10px;
   margin-top: 30px;
+  margin-left: 10px;
   user-select: none;
 }
 .hints summary:hover{
@@ -59,13 +60,13 @@
 }
 
 .colorTrue {
-  background-color: var(--red);
+  background-color: var(--hintColor);
 }
 .colorTrue::after{
   content: "（ヒント）";
 }
 .colorFalse {
-  background-color: var(--green);
+  background-color: var(--answerColor);
 }
 .colorFalse::after{
   content: "（答え）";
