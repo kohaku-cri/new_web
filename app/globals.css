@@ -12,7 +12,12 @@
   --backgroundColor: var(--black);
   --colorColor: var(--white);
 }
-
+details {
+  font-family: "NotoSansJP";
+}
+summary {
+  font-family: "NotoSansJP";
+}
 body {
   color: var(--colorColor);
   background: var(--backgroundColor);
@@ -46,7 +51,7 @@ ul {
   font-family: "NotoSansJP";
   margin-top: 40px;
 }
-li{
+li {
   list-style: none;
 }
 a {

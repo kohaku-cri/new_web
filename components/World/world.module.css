@@ -30,16 +30,45 @@
   margin-top: 50px;
   border-radius: 5px;
   padding: 5px;
+  padding-bottom: 80px;
 }
 .explain {
   margin-top: 40px;
 }
 /* ヒント */
+
 .hints{
   margin-top: 70px;
 }
 .hints h2 {
   margin-bottom: 20px;
+}
+.openText{
+  margin-left: 20px;
+}
+
+.hints summary {
+  width: 35%;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-top: 30px;
+  user-select: none;
+}
+.hints summary:hover{
+  cursor: pointer;
+}
+
+.colorTrue {
+  background-color: var(--red);
+}
+.colorTrue::after{
+  content: "（ヒント）";
+}
+.colorFalse {
+  background-color: var(--green);
+}
+.colorFalse::after{
+  content: "（答え）";
 }
 /* 他の作品一覧 */
 .mapListTitle{

@@ -27,12 +27,19 @@ export default function World(props: any) {
               <div>{props.explain}</div>
             </div>
             <div className={style.hints}>
-                <h2>～ヒント一覧～</h2>
+              <h2>～ヒント一覧～</h2>
               {props.hint.map((item: any) => {
+                if (item.hint == undefined) {
+                  item.hint = true;
+                }
                 return (
                   <details>
-                    <summary>{item.title}</summary>
-                    {item.open}
+                    <summary
+                      className={item.hint ? style.colorTrue : style.colorFalse}
+                    >
+                      {item.title}
+                    </summary>
+                    <p className={style.openText}>{item.open}</p>
                   </details>
                 );
               })}
