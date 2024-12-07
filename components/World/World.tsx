@@ -7,6 +7,7 @@ import { usePathname } from "next/navigation";
 
 export default function World(props: any) {
   const aspect = 168;
+  const hintAspect = 300;
   const pathName = usePathname();
   const foundData = mapdata.find((item) => "/world/" + item.mapNum == pathName);
   return (
@@ -27,7 +28,7 @@ export default function World(props: any) {
               <div>{props.explain}</div>
             </div>
             <div className={style.hints}>
-              <h2>～ヒント一覧～</h2>
+              {props.hint.length > 0 && <h2>～ヒント一覧～</h2>}
               {props.hint.map((item: any) => {
                 if (item.hint == undefined) {
                   item.hint = true;
@@ -40,9 +41,17 @@ export default function World(props: any) {
                       {item.title}
                     </summary>
                     {item.open && (
-                      <p className={style.openText}>{item.open}</p>
+                      <p className={style.openElement}>{item.open}</p>
                     )}
-                    {item.img && (<Image src={item.img} alt={item.alt}/>)}
+                    {item.img && (
+                      <Image
+                        className={style.openElement}
+                        src={item.img}
+                        alt={item.alt}
+                        width={hintAspect}
+                        height={hintAspect * 0.5625}
+                      />
+                    )}
                   </details>
                 );
               })}
