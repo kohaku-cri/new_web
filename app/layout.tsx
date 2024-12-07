@@ -15,7 +15,6 @@ export const Potta = localFont({
   variable: "--Potta",
   weight: "100 900",
 });
-
 export default function RootLayout({
   children,
 }: Readonly<{
