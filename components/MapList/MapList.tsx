@@ -5,10 +5,10 @@ import { ListButton } from "@/components/Button/LinkButton";
 
 export function MapList() {
   return (
-    <div className={style.mapList} key="mapList">
+    <div className={style.mapList}>
       {mapdata.map((item) => {
         return (
-          <div className={style.map}>
+          <div className={style.map} key={item.mapName}>
             <Image
               src={item.mapImgLink}
               width={imgSize.width}

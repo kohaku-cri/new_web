@@ -8,7 +8,7 @@ export default function News() {
       <h2>新着順</h2>
       {newsData.map((item) => {
         return (
-          <div>
+          <div key={item.title}>
             <Link href={`/news/${item.date}`}>{item.date}・{item.title}</Link>
           </div>
         );

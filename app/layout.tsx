@@ -10,17 +10,15 @@ const NotoSansJP = localFont({
   variable: "--font-geist-sans",
   weight: "100 900",
 });
-const NotoserifJP = localFont({
-  src: "./fonts/NotoSerifJP-Regular.ttf",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
 const Potta = localFont({
   src: "./fonts/PottaOne-Regular.ttf",
   variable: "--font-geist-mono",
   weight: "100 900",
 });
-
+{
+  NotoSansJP;
+  Potta;
+}
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -29,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <head>
-      <link rel="icon" href="/img/favicon.svg" />
+        <link rel="icon" href="/img/favicon.svg" />
       </head>
       <body>
         {/* <Snow /> */}

@@ -5,7 +5,20 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-export default function World(props: any) {
+type hint = {
+  title?: string; // ヒントタイトル
+  open?: string; // ヒントを開いたときに表示される内容
+  hint?: boolean; // trueの場合ヒント、falseの場合答え (省略可能: デフォルト true)
+  img?: string; // 表示する画像リンク (省略可能)
+  alt?: string; // 画像の代替テキスト (imgが指定された場合は必須)
+};
+
+type props = {
+  explain: JSX.Element; // 概要欄の内容
+  hint: hint[]; // ヒント配列
+};
+
+export default function World(props: props) {
   const aspect = 168;
   const hintAspect = 300;
   const pathName = usePathname();
@@ -29,12 +42,12 @@ export default function World(props: any) {
             </div>
             <div className={style.hints}>
               {props.hint.length > 0 && <h2>～ヒント一覧～</h2>}
-              {props.hint.map((item: any) => {
+              {props.hint.map((item: hint) => {
                 if (item.hint == undefined) {
                   item.hint = true;
                 }
                 return (
-                  <details>
+                  <details key={item.title}>
                     <summary
                       className={item.hint ? style.colorTrue : style.colorFalse}
                     >
@@ -47,7 +60,7 @@ export default function World(props: any) {
                       <Image
                         className={style.openElement}
                         src={item.img}
-                        alt={item.alt}
+                        alt={item.alt || "代替テキストが設定されていません"}
                         width={hintAspect}
                         height={hintAspect * 0.5625}
                       />

@@ -36,7 +36,7 @@ export default function Home() {
                 </Link>
                 {getNews.map((item) => {
                   return (
-                    <Link href={`/news/${item.date}`} className={style.new}>
+                    <Link href={`/news/${item.date}`} className={style.new} key={item.title}>
                       {item.date} ・{item.title}
                     </Link>
                   );
