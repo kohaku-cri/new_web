@@ -5,12 +5,12 @@ import style from "@/components/Footer/Footer.module.css";
 import { Footer } from "@/components/Footer/Footer";
 import { Header } from "@/components/Header/Header";
 
-export const NotoSansJP = localFont({
+const NotoSansJP = localFont({
   src: "./fonts/NotoSansJP-SemiBold.ttf",
   variable: "--NotoSansJP",
   weight: "100 900",
 });
-export const Potta = localFont({
+const Potta = localFont({
   src: "./fonts/PottaOne-Regular.ttf",
   variable: "--Potta",
   weight: "100 900",
