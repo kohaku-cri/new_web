@@ -13,6 +13,8 @@
   --colorColor: var(--white);
   --hintColor: var(--green);
   --answerColor: var(--red);
+
+  /* --Potta: var(--Potta) */
 }
 details {
   font-family: "NotoSansJP";
