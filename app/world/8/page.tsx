@@ -4,8 +4,8 @@ export default function Worlds() {
   return (
     <World
       explain={
-        //ここに概要欄の内容を入力（ヒント＆答えは別箇所）
-        <><p>テスト</p></>
+        //ここに概要欄の内容を入力 JSX（ヒント＆答えは別箇所）
+        <></>
       }
       //ヒントは⇩に記述
       //hint = true・・・ヒントとして表示　※hintは省略可能（デフォルト値 true）
@@ -18,7 +18,7 @@ export default function Worlds() {
         {
           title: "タイトル",
           open: "中身",
-          hint: "true",
+          hint: false,
         },
       ]}
     />
