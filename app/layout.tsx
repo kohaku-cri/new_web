@@ -15,10 +15,8 @@ const Potta = localFont({
   variable: "--font-geist-mono",
   weight: "100 900",
 });
-{
-  NotoSansJP;
-  Potta;
-}
+  NotoSansJP
+  Potta
 export default function RootLayout({
   children,
 }: Readonly<{
