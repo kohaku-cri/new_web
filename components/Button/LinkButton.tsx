@@ -1,5 +1,5 @@
 import Link from "next/link";
-import style from "./LinkButton.module.css";
+import style from "@/components/Button/LinkButton.module.css";
 
 export function ListButton(props: any) {
   return (

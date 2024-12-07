@@ -1,7 +1,7 @@
 import { MapList } from "@/components/MapList/MapList";
-import style from "../components/index/index.module.css";
-import { ListButton } from "../components/Button/LinkButton";
-import { mapdata, imgSize } from "../public/dataBase/MapData";
+import style from "@/components/index/index.module.css";
+import { ListButton } from "@/components/Button/LinkButton";
+import { mapdata, imgSize } from "@/public/dataBase/MapData";
 import Image from "next/image";
 import Link from "next/link";
 import { newsData } from "@/public/dataBase/newsData";

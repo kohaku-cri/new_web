@@ -1,7 +1,7 @@
-import style from "./MapList.module.css";
+import style from "@/components/MapList/MapList.module.css";
 import { mapdata, imgSize } from "@/public/dataBase/MapData";
 import Image from "next/image";
-import { ListButton } from "../Button/LinkButton";
+import { ListButton } from "@/components/Button/LinkButton";
 
 export function MapList() {
   return (
