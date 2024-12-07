@@ -1,52 +1,13 @@
-"use client";
-import style from "@/components/World/world.module.css";
-import { mapdata } from "@/public/dataBase/MapData";
-import Image from "next/image";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
+import World from "@/components/World/World";
 
-export default function World() {
-  const aspect = 168;
-  const pathName = usePathname();
-  const foundData = mapdata.find((item) => "/world/" + item.mapNum == pathName);
+export default function Worlds() {
   return (
-    <div className={style.main}>
-      <div className={style.margin}>
-        <div className={style.mediaSection}>
-          <iframe
-            className={style.youtube}
-            src="https://www.youtube.com/embed/nmF8JFw_GZI?si=Nb6EYpFWQGzytzdq"
-            allowFullScreen
-          ></iframe>
-          <h2>
-            #{foundData?.mapNum} {foundData?.mapName}
-          </h2>
-          <div className={style.description}>
-            <p>公開日：{foundData?.date}</p>
-            <div className={style.explain}>
-              <p>概要欄の説明文</p>
-            </div>
-          </div>
-        </div>
-        <div className={style.maps}>
-          <h1 className={style.mapListTitle}>過去作</h1>
-          {mapdata.map((item) => {
-            return (
-              <div key={item.link}>
-                <Link href={item.link}>
-                  <Image
-                    src={item.mapImgLink}
-                    alt={item.alt}
-                    width={aspect}
-                    height={aspect * 0.5625}
-                  />
-                  <h3>{item.mapName}</h3>
-                </Link>
-              </div>
-            );
-          })}
-        </div>
-      </div>
-    </div>
+    <World
+      explain={
+        <>
+          <p>ここに概要欄の内容を入力</p>
+        </>
+      }
+    />
   );
 }
