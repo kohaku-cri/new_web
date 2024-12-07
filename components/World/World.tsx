@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-export default function World(props:any) {
+export default function World(props: any) {
   const aspect = 168;
   const pathName = usePathname();
   const foundData = mapdata.find((item) => "/world/" + item.mapNum == pathName);
@@ -25,6 +25,17 @@ export default function World(props:any) {
             <p>公開日：{foundData?.date}</p>
             <div className={style.explain}>
               <div>{props.explain}</div>
+            </div>
+            <div className={style.hints}>
+                <h2>～ヒント一覧～</h2>
+              {props.hint.map((item: any) => {
+                return (
+                  <details>
+                    <summary>{item.title}</summary>
+                    {item.open}
+                  </details>
+                );
+              })}
             </div>
           </div>
         </div>

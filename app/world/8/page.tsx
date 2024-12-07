@@ -4,10 +4,23 @@ export default function Worlds() {
   return (
     <World
       explain={
-        <>
-          <p>ここに概要欄の内容を入力</p>
-        </>
+        //ここに概要欄の内容を入力（ヒント＆答えは別箇所）
+        <><p>テスト</p></>
       }
+      //ヒントは⇩に記述
+      //hint = true・・・ヒントとして表示　※hintは省略可能（デフォルト値 true）
+      //hint = false・・・答えとして表示
+      hint={[
+        {
+          title: "タイトル",
+          open: "中身",
+        },
+        {
+          title: "タイトル",
+          open: "中身",
+          hint: "true",
+        },
+      ]}
     />
   );
 }

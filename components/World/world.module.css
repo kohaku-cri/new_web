@@ -34,6 +34,13 @@
 .explain {
   margin-top: 40px;
 }
+/* ヒント */
+.hints{
+  margin-top: 70px;
+}
+.hints h2 {
+  margin-bottom: 20px;
+}
 /* 他の作品一覧 */
 .mapListTitle{
   text-align: center;
