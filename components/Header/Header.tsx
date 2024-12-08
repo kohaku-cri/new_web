@@ -8,7 +8,7 @@ export function Header() {
       <Link href="/information" className={style.link}>ガイドライン</Link>
       <Link href="/news" className={style.link}>お知らせ</Link>
       <Link href="/tools" className={style.link}>ツール</Link>
-
+      <Link href="/fqa" className={style.link}>FQA</Link>
     </div>
   );
 }
