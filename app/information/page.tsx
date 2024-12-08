@@ -1,9 +1,11 @@
-import style from "@/components/information/information.module.css";
+import style from "@/components/news.module.css";
 
-export default function Tools() {
+export default function WhatIsNews() {
   return (
     <div className={style.main}>
-      <h2>このページは現在準備中です...</h2>
+      <div>
+        <div></div>
+      </div>
     </div>
   );
 }
