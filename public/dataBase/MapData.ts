@@ -1,12 +1,11 @@
-// import { randomUUID } from "crypto";
-
 type Map = {
   mapNum: string;
   mapName: string;
   mapImgLink: string;
   link: string;
-  alt: string;
+  alt?: string;
   date: string;
+  visibility: string;
 };
 
 export const mapdata: Map[] = [
@@ -19,7 +18,13 @@ export const mapdata: Map[] = [
   //   link: "/world/8",
   //   alt: "魔法使いと空の孤島 マインクラフト脱出マップ",
   //   date: "2024/11/4",
+  //   visibility: public,
   // },
+
+//visibility・・・公開情報
+  //値 public＝公開 local＝非公開 timeLocal＝一時非公開
+
+//詳細ページのURLについて・・・mapNumの数値（文字列）とURLは同一とすること
 
   {
     mapNum:"8",
@@ -28,6 +33,7 @@ export const mapdata: Map[] = [
     link: "/world/8",
     alt: "魔法使いと空の孤島 マインクラフト脱出マップ",
     date: "2024/11/4",
+    visibility: "public",
   },
   {
     mapNum:"7",
@@ -36,6 +42,7 @@ export const mapdata: Map[] = [
     link: "/world/7",
     alt: "教室10《8番出口オマージュ》 マインクラフト脱出マップ",
     date: "2024/1/23",
+    visibility: "public",
   },
   {
     mapNum:"6",
@@ -44,6 +51,7 @@ export const mapdata: Map[] = [
     link: "/world/6",
     alt: "雪夜の山峡 マインクラフト脱出マップ",
     date: "2023/12/23",
+    visibility: "public",
   },
   {
     mapNum:"5",
@@ -52,6 +60,7 @@ export const mapdata: Map[] = [
     link: "/world/5",
     alt: "ハロウィンハウスからの脱出 マインクラフト脱出マップ",
     date: "2023/10/26",
+    visibility: "public",
   },
   {
     mapNum:"4",
@@ -60,6 +69,7 @@ export const mapdata: Map[] = [
     link: "/world/4",
     alt: "謎めく研究所からの脱出 マインクラフト脱出マップ",
     date: "2023/10/6",
+    visibility: "public",
   },
   {
     mapNum:"3",
@@ -68,14 +78,16 @@ export const mapdata: Map[] = [
     link: "/world/3",
     alt: "トロールMAP マインクラフト脱出マップ",
     date: "2023/9/10",
+    visibility: "public",
   },
   {
     mapNum:"2",
-    mapName: "とある民家からの脱出",
+    mapName: "【短編】とある民家からの脱出",
     mapImgLink: "/img/2.jpg",
     link: "/world/2",
     alt: "とある民家からの脱出 マインクラフト脱出マップ",
     date: "2024/9/04",
+    visibility: "public",
   },
   {
     mapNum:"1",
@@ -84,6 +96,7 @@ export const mapdata: Map[] = [
     link: "/world/1",
     alt: "釣り人の記憶 マインクラフト脱出マップ",
     date: "2023/9/2",
+    visibility: "public",
   },
 ];
 const aspect = 340;

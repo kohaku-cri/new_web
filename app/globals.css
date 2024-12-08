@@ -1,11 +1,12 @@
 :root {
-  --yellow: #ecf097;
+  --yellow: #8e9605;
   --green: #599454;
   --red: #c2443d;
   --white: #e6e7e8;
   --black: #202020;
   --gray: #313131;
   --lightBlue: #1e99aa;
+  --purple: #4a10b6;
 
   --buttonColor: var(--red);
   --buttonHoverColor: var(--green);

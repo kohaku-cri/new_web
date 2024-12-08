@@ -37,13 +37,13 @@
 }
 /* ヒント */
 
-.hints{
+.hints {
   margin-top: 70px;
 }
 .hints h2 {
   margin-bottom: 20px;
 }
-.openElement{
+.openElement {
   margin-left: 20px;
 }
 .hints summary {
@@ -54,10 +54,10 @@
   margin-left: 10px;
   user-select: none;
 }
-.hints summary:hover{
+.hints summary:hover {
   cursor: pointer;
 }
-@media screen and (max-width:700px) {
+@media screen and (max-width: 700px) {
   .hints summary {
     width: 80%;
   }
@@ -66,31 +66,30 @@
 .colorTrue {
   background-color: var(--hintColor);
 }
-.colorTrue::after{
+.colorTrue::after {
   content: "（ヒント）";
 }
 .colorFalse {
   background-color: var(--answerColor);
 }
-.colorFalse::after{
+.colorFalse::after {
   content: "（答え）";
 }
 /* 他の作品一覧 */
-.mapListTitle{
+.mapListTitle {
   text-align: center;
   margin-bottom: 40px;
 }
-.maps{
+.maps {
   width: 400px;
   float: right;
   margin-left: 40px;
 }
-.maps a{
+.maps a {
   display: flex;
   margin-bottom: 10px;
-
 }
-.maps img{
+.maps img {
   border-radius: 10px;
 }
 
@@ -98,22 +97,27 @@
   .mediaSection {
     width: 100%;
   }
-  .margin{
+  .margin {
     flex-direction: column;
   }
-  .maps{
+  .maps {
     margin-top: 70px;
     width: 100%;
   }
-  .mapListTitle{
+  .mapListTitle {
     display: none;
   }
 }
-@media screen and (max-width:600px) {
-  .maps{
+@media screen and (max-width: 600px) {
+  .maps {
     margin-left: 0;
   }
   .main h3 {
     font-size: 14px;
   }
+}
+
+/* local時に非表示 */
+.none {
+  display: none;
 }

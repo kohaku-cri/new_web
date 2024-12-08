@@ -75,11 +75,11 @@ export default function World(props: props) {
           <h1 className={style.mapListTitle}>過去作</h1>
           {mapdata.map((item) => {
             return (
-              <div key={item.link}>
+              <div key={item.link} className={`${item.visibility == "local" ? style.none: null}`}>
                 <Link href={item.link}>
                   <Image
                     src={item.mapImgLink}
-                    alt={item.alt}
+                    alt={item.alt || "代替テキストが設定されていません"}
                     width={aspect}
                     height={aspect * 0.5625}
                   />

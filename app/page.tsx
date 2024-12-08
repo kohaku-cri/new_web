@@ -19,13 +19,13 @@ export default function Home() {
               width={imgSize.width}
               height={imgSize.height}
               src={mapdata[0].mapImgLink}
-              alt={mapdata[0].alt}
+              alt={mapdata[0].alt || "代替テキストが設定されていません"}
             />
             <h2 className={style.newMapName}>{mapdata[0].mapName}</h2>
             <p className={style.newMapDescription}>
               {mapdata[0].date}
             </p>
-            <ListButton url={mapdata[0].link} title="詳しく見る" />
+            <ListButton url={mapdata[0].link} visibility="" title="詳しく見る" />
           </div>
           <div className={style.news}>
             <h1>｜お知らせ｜</h1>
