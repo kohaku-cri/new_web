@@ -80,6 +80,17 @@ export const mapdata: Map[] = [
     visibility: "public",
   },
   {
+    mapNum: "4.5",
+    mapName: "入れ替わりアドオン",
+    mapImgLink: "/img/4.5.jpg",
+    link: "/world/4.5",
+    youtube: "",
+    distributionLink: "",
+    alt: "入れ替わりアドオン マインクラフトアドオン",
+    date: "2023/10/12",
+    visibility: "local",
+  },
+  {
     mapNum: "4",
     mapName: "謎めく研究所からの脱出",
     mapImgLink: "/img/4.jpg",
