@@ -29,7 +29,7 @@ export default function World(props: props) {
         <div className={style.mediaSection}>
           <iframe
             className={style.youtube}
-            src="https://www.youtube.com/embed/nmF8JFw_GZI?si=Nb6EYpFWQGzytzdq"
+            src={foundData?.youtube}
             allowFullScreen
           ></iframe>
           <h2>
