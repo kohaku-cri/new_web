@@ -121,3 +121,26 @@
 .none {
   display: none;
 }
+/* 表 */
+.description table {
+  margin-top: 40px;
+  border-collapse: collapse;
+  border: 2px solid var(--colorColor);
+  margin-left: 5px;
+}
+.description th,
+.description td {
+  font-size: 18px;
+  padding: 5px 10px;
+  text-align: center;
+}
+
+.public {
+  background-color: var(--green);
+}
+.timeLocal {
+  background-color: var(--purple);
+}
+.local {
+  background-color: var(--red);
+}

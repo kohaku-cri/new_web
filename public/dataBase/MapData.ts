@@ -25,6 +25,9 @@ export const mapdata: Map[] = [
 
 //visibility・・・公開情報
   //値 public＝公開 local＝非公開 timeLocal＝一時非公開
+  // public
+  // local
+  // timeLocal
 
 //詳細ページのURLについて・・・mapNumの数値（文字列）とURLは同一とすること
 

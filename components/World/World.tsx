@@ -37,6 +37,20 @@ export default function World(props: props) {
           </h2>
           <div className={style.description}>
             <p>公開日：{foundData?.date}</p>
+            <table>
+              <tr>
+                <th>公開状況</th>
+                {foundData?.visibility == "public" ? (
+                  <td className={style.public}>公開</td>
+                ) : null}
+                {foundData?.visibility == "timeLocal" ? (
+                  <td className={style.timeLocal}>一時非公開中</td>
+                ) : null}
+                {foundData?.visibility == "local" ? (
+                  <td className={style.local}>非公開</td>
+                ) : null}
+              </tr>
+            </table>
             <div className={style.explain}>
               <div>{props.explain}</div>
             </div>
@@ -75,7 +89,10 @@ export default function World(props: props) {
           <h1 className={style.mapListTitle}>過去作</h1>
           {mapdata.map((item) => {
             return (
-              <div key={item.link} className={`${item.visibility == "local" ? style.none: null}`}>
+              <div
+                key={item.link}
+                className={`${item.visibility == "local" ? style.none : null}`}
+              >
                 <Link href={item.link}>
                   <Image
                     src={item.mapImgLink}
