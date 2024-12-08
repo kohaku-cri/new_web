@@ -1,13 +1,16 @@
-"use client"
+"use client";
 
-import Snowfall from 'react-snowfall';
+import Snowfall from "react-snowfall";
 
 export function Snow() {
   return (
-      <Snowfall style={{
-        position: 'fixed',
-        width: '100vw',
-        height: '100vh',
-      }} />
-  )
+    <Snowfall
+      style={{
+        position: "fixed",
+        width: "100vw",
+        height: "100vh",
+      }}
+      snowflakeCount={100}
+    />
+  );
 }
