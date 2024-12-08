@@ -4,6 +4,7 @@ import { mapdata } from "@/public/dataBase/MapData";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { ListButton } from "../Button/LinkButton";
 
 type hint = {
   title?: string; // ヒントタイトル
@@ -51,6 +52,7 @@ export default function World(props: props) {
                 ) : null}
               </tr>
             </table>
+            <ListButton url={foundData?.distributionLink || "notfound"} title="配布ページへ【外部】" visibility={foundData?.visibility || "public"}/>
             <div className={style.explain}>
               <div>{props.explain}</div>
             </div>
