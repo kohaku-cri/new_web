@@ -8,12 +8,12 @@ import { Header } from "@/components/Header/Header";
 const NotoSansJP = localFont({
   src: "./fonts/NotoSansJP-SemiBold.ttf",
   variable: "--NotoSansJP",
-  weight: "100 900",
+  display: "swap",
 });
 const Potta = localFont({
   src: "./fonts/PottaOne-Regular.ttf",
   variable: "--Potta",
-  weight: "100 900",
+  display: "swap",
 });
 export default function RootLayout({
   children,
@@ -21,7 +21,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ja">
+    <html lang="ja" className={`${NotoSansJP.className} ${Potta.className}`}>
       <head>
         <link rel="icon" href="/img/favicon.svg" />
       </head>
