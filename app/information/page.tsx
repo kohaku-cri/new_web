@@ -1,14 +1,17 @@
 import style from "@/components/news.module.css";
 
-export default function WhatIsNews() {
+export default function information() {
   return (
     <div className={style.main}>
       <div>
         <div>
           <h2>｜ガイドライン</h2>
-          <p>これはデフォルトのガイドラインであり配布ページに特別の記載がない限り適用されます</p>
-          <p>またこのガイドラインは各種法令、使用素材の規約、及びマインクラフトエンドユーザーライセンス契約の下に適用され</p>
-          <p>仮にガイドラインの内容がこれらに反している場合その部分は無効となります</p>
+          <p>
+            これはデフォルトのガイドラインで配布ページに特別の記載がない箇所に対して適用されます
+          </p>
+          <p>
+            またこのガイドラインは各種法令、使用素材の規約、及びマインクラフトエンドユーザーライセンス契約の下に適用されます
+          </p>
           <table>
             <tr>
               <th>配信利用</th>
@@ -29,11 +32,26 @@ export default function WhatIsNews() {
           </table>
 
           <h3 className={style.marTop110}>〇非自作コンテンツについて</h3>
-          <p>主にマップのロゴに下記の素材を使わせていただいている場合があります</p>
+          <p>
+            主にマップのロゴに下記の素材を使わせていただいている場合があります
+          </p>
           <ul>
-            <li><a href="https://icooon-mono.com/" className={style.linkColor}>icooon-mono</a></li>
-            <li><a href="https://www.ac-illust.com/" className={style.linkColor}>illustAC</a></li>
+            <li>
+              ・
+              <a href="https://icooon-mono.com/" className={style.linkColor}>
+                icooon-mono
+              </a>
+            </li>
+            <li>
+              ・
+              <a href="https://www.ac-illust.com/" className={style.linkColor}>
+                illustAC
+              </a>
+            </li>
           </ul>
+          <p className={style.marTop110}>
+            〇その他不明点などはTwitterのDMまでお気軽にお問い合わせください
+          </p>
         </div>
       </div>
     </div>
