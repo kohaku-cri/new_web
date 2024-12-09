@@ -45,9 +45,8 @@
 .marTop40{
   margin-top: 40px;
 }
-.linkColor{
-  color: var(--linkColor);
-  border-bottom: 1px solid var(--linkColor);
+.link{
+  border-bottom: 1px solid var(--colorColor);
 }
 .main table {
   margin-top: 40px;
