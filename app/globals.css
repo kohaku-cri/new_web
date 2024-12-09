@@ -7,6 +7,8 @@
   --gray: #313131;
   --lightBlue: #1e99aa;
   --purple: #4a10b6;
+  
+  --linkColor: #0c00b1;
 
   --buttonColor: var(--red);
   --buttonHoverColor: var(--green);
