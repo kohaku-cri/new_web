@@ -5,6 +5,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { ListButton } from "../Button/LinkButton";
+import { Tooltip } from "react-tooltip";
+import 'react-tooltip/dist/react-tooltip.css'
 
 type hint = {
   title?: string; // ヒントタイトル
@@ -38,8 +40,14 @@ export default function World(props: props) {
           </h2>
           <div className={style.iconCopyRight}>
             <Image src="/img/favicon.svg" width={48} height={48} alt="" />
-            <a>権利情報を確認する</a>
+            <a data-tooltip-id="my-tooltip">権利情報を確認する</a>
           </div>
+          <Tooltip
+            id="my-tooltip"
+            place="top"
+            variant="dark"
+            content="詳細"
+          />
           <div className={style.description}>
             <p>公開日：{foundData?.date}</p>
             <table>
