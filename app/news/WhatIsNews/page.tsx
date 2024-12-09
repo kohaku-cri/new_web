@@ -19,7 +19,7 @@ export default function WhatIsNews() {
             <li>・制作日記や制作秘話</li>
             <li>・日記</li>
           </ul>
-          <h3 className={style.marTop110}>日付の読み方</h3>
+          <h3 className={style.marTop110}>URLと日付の意味</h3>
           <p>西暦ー月ー日ー番号</p>
         </div>
       </div>
