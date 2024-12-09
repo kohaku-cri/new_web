@@ -10,7 +10,7 @@ export function Snow() {
         width: "100vw",
         height: "100vh",
       }}
-      snowflakeCount={100}
+      snowflakeCount={60}
     />
   );
 }
