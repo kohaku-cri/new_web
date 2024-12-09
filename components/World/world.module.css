@@ -23,6 +23,24 @@
   border-radius: 10px;
   border: none;
 }
+/* 著作権情報とアイコン */
+/* paddingとmarginの変更にはレスポンシブに設定している値に注意する */
+.iconCopyRight {
+  display: flex;
+  align-items: center;
+}
+.iconCopyRight a {
+  margin-left: 50px;
+  padding: 7px 70px;
+  background-color: var(--buttonColor);
+  border-radius: 20px;
+  cursor: pointer;
+  user-select: none;
+}
+.iconCopyRight a:hover {
+  background-color: var(--buttonHoverColor);
+  transition: 0.3s;
+}
 /* 概要欄 */
 .description {
   min-height: 200px;
@@ -113,6 +131,11 @@
   }
   .main h3 {
     font-size: 14px;
+  }
+  /* 著作権情報とアイコン */
+  .iconCopyRight a {
+    padding: 7px 20px;
+    margin-left: 30px;
   }
 }
 

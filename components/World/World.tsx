@@ -36,7 +36,10 @@ export default function World(props: props) {
           <h2>
             #{foundData?.mapNum} {foundData?.mapName}
           </h2>
-          <Image src="/img/favicon.svg" width={48} height={48} alt=""/>
+          <div className={style.iconCopyRight}>
+            <Image src="/img/favicon.svg" width={48} height={48} alt="" />
+            <a>権利情報を確認する</a>
+          </div>
           <div className={style.description}>
             <p>公開日：{foundData?.date}</p>
             <table>
@@ -53,7 +56,11 @@ export default function World(props: props) {
                 ) : null}
               </tr>
             </table>
-            <ListButton url={foundData?.distributionLink || "notfound"} title="配布ページへ【外部】" visibility={foundData?.visibility || "public"}/>
+            <ListButton
+              url={foundData?.distributionLink || "notfound"}
+              title="配布ページへ【外部】"
+              visibility={foundData?.visibility || "public"}
+            />
             <div className={style.explain}>
               <div>{props.explain}</div>
             </div>
