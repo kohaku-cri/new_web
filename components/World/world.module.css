@@ -27,7 +27,6 @@
 .description {
   min-height: 200px;
   background-color: var(--gray);
-  margin-top: 50px;
   border-radius: 5px;
   padding: 5px;
   padding-bottom: 80px;

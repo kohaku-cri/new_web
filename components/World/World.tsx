@@ -36,6 +36,7 @@ export default function World(props: props) {
           <h2>
             #{foundData?.mapNum} {foundData?.mapName}
           </h2>
+          <Image src="/img/favicon.svg" width={48} height={48} alt=""/>
           <div className={style.description}>
             <p>公開日：{foundData?.date}</p>
             <table>
