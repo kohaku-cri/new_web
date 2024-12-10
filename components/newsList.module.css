@@ -12,3 +12,20 @@
   border-bottom: 1px solid var(--colorColor);
   transition: 0.3s;
 }
+.topTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  width: 150px;
+}
+.changeOrder {
+  padding: 15px;
+}
+.changeOrder:hover {
+  background-color: var(--gray);
+  transition: 0.5s;
+  cursor: pointer;
+  user-select: none;
+}
