@@ -8,6 +8,7 @@ type Map = {
   alt?: string;
   date: string;
   visibility: string;
+  copyRight: string[];
 };
 
 export const mapdata: Map[] = [
@@ -35,6 +36,8 @@ export const mapdata: Map[] = [
 
   //youtubeリンクは埋め込みリンクのリンクを使用すること (URL部分を選択しマウスを離さずにctrl+c)
 
+  //copyRight・・・権利情報を記入(配列) ※空配列の場合は『使用している外部素材はありません』と表示される
+
   {
     mapNum: "8",
     mapName: "魔法使いと空の孤島",
@@ -45,6 +48,7 @@ export const mapdata: Map[] = [
     alt: "魔法使いと空の孤島 マインクラフト脱出マップ",
     date: "2024/11/4",
     visibility: "public",
+    copyRight: ["ロゴにicooon-monoのイラスト素材を使用"],
   },
   {
     mapNum: "7",
@@ -56,6 +60,7 @@ export const mapdata: Map[] = [
     alt: "教室10《8番出口オマージュ》 マインクラフト脱出マップ",
     date: "2024/1/23",
     visibility: "public",
+    copyRight: [],
   },
   {
     mapNum: "6",
@@ -67,6 +72,7 @@ export const mapdata: Map[] = [
     alt: "雪夜の山峡 マインクラフト脱出マップ",
     date: "2023/12/23",
     visibility: "public",
+    copyRight: [],
   },
   {
     mapNum: "5",
@@ -78,6 +84,7 @@ export const mapdata: Map[] = [
     alt: "ハロウィンハウスからの脱出 マインクラフト脱出マップ",
     date: "2023/10/26",
     visibility: "public",
+    copyRight: [],
   },
   {
     mapNum: "4.5",
@@ -89,6 +96,7 @@ export const mapdata: Map[] = [
     alt: "入れ替わりアドオン マインクラフトアドオン",
     date: "2023/10/12",
     visibility: "local",
+    copyRight: [],
   },
   {
     mapNum: "4",
@@ -100,6 +108,7 @@ export const mapdata: Map[] = [
     alt: "謎めく研究所からの脱出 マインクラフト脱出マップ",
     date: "2023/10/6",
     visibility: "public",
+    copyRight: [],
   },
   {
     mapNum: "3",
@@ -111,6 +120,7 @@ export const mapdata: Map[] = [
     alt: "トロールMAP マインクラフト脱出マップ",
     date: "2023/9/10",
     visibility: "public",
+    copyRight: [],
   },
   {
     mapNum: "2",
@@ -122,6 +132,7 @@ export const mapdata: Map[] = [
     alt: "とある民家からの脱出 マインクラフト脱出マップ",
     date: "2024/9/04",
     visibility: "public",
+    copyRight: [],
   },
   {
     mapNum: "1",
@@ -133,6 +144,7 @@ export const mapdata: Map[] = [
     alt: "釣り人の記憶 マインクラフト脱出マップ",
     date: "2023/9/2",
     visibility: "public",
+    copyRight: [],
   },
 ];
 const aspect = 340;

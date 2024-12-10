@@ -5,8 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { ListButton } from "../Button/LinkButton";
-import { Tooltip } from "react-tooltip";
-import 'react-tooltip/dist/react-tooltip.css'
+import { useState } from "react";
 
 type hint = {
   title?: string; // ヒントタイトル
@@ -22,10 +21,17 @@ type props = {
 };
 
 export default function World(props: props) {
+  const [isOpen, setIsOpen] = useState(false);
+  const copyRightInfoOpen = () => setIsOpen(true);
+  const copyRightInfoClose = () => setIsOpen(false);
+
+  console.log(isOpen);
+
   const aspect = 168;
   const hintAspect = 300;
   const pathName = usePathname();
   const foundData = mapdata.find((item) => "/world/" + item.mapNum == pathName);
+
   return (
     <div className={style.main}>
       <div className={style.margin}>
@@ -40,14 +46,26 @@ export default function World(props: props) {
           </h2>
           <div className={style.iconCopyRight}>
             <Image src="/img/favicon.svg" width={48} height={48} alt="" />
-            <a data-tooltip-id="my-tooltip">権利情報を確認する</a>
+            <a onClick={copyRightInfoOpen}>権利情報を確認する</a>
           </div>
-          <Tooltip
-            id="my-tooltip"
-            place="top"
-            variant="dark"
-            content="詳細"
-          />
+          {isOpen && (
+            <div className={style.background}>
+              <div className={style.copyRightList}>
+                <h2>権利情報（敬称略）</h2>
+                {foundData?.copyRight.length == 0 && (
+                  <p>
+                    本作に使用している外部素材はありません（ロゴのフォントを除く）
+                  </p>
+                )}
+                {foundData?.copyRight.map((item) => {
+                  return <p>{item}</p>;
+                })}
+                <a className={style.erase} onClick={copyRightInfoClose}>
+                  ポップアップを閉じる
+                </a>
+              </div>
+            </div>
+          )}
           <div className={style.description}>
             <p>公開日：{foundData?.date}</p>
             <table>

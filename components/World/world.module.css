@@ -41,6 +41,40 @@
   background-color: var(--buttonHoverColor);
   transition: 0.3s;
 }
+/* 著作権情報のポップアップ */
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: #e7e7e771;
+}
+.erase {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  cursor: pointer;
+  border-bottom: 1px solid var(--colorColor);
+}
+.copyRightList {
+  background-color: var(--gray);
+  border-radius: 10px;
+  min-height: 30%;
+  width: 50%;
+  position: fixed;
+  left: 50vw;
+  top: 50vh;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  /* transition: 0.5s; */
+  padding-bottom: 50px;
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.521);
+}
+.copyRightList h2 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
 /* 概要欄 */
 .description {
   min-height: 200px;
@@ -123,6 +157,10 @@
   }
   .mapListTitle {
     display: none;
+  }
+  /* 著作権情報のポップアップ */
+  .copyRightList {
+    width: 90%;
   }
 }
 @media screen and (max-width: 600px) {
