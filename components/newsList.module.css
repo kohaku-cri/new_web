@@ -4,12 +4,11 @@
 }
 .main a {
   margin-top: 20px;
+  border-bottom: 1px solid var(--backgroundColor);
+  flex-direction: column;
+  padding: 0 10px;
 }
 .main a:hover {
   border-bottom: 1px solid var(--colorColor);
   transition: 0.3s;
-}
-.list {
-  display: flex;
-  flex-direction: column;
 }
