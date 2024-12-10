@@ -1,12 +1,15 @@
-.main{
-    margin-top: 110px;
-    min-height: 100vh;
-
+.main {
+  margin-top: 110px;
+  min-height: 100vh;
 }
-.main a{
-    margin-top: 20px;
+.main a {
+  margin-top: 20px;
 }
-.main a:hover{
-    border-bottom: 1px solid var(--colorColor);
-    transition: 0.3s;
+.main a:hover {
+  border-bottom: 1px solid var(--colorColor);
+  transition: 0.3s;
+}
+.list {
+  display: flex;
+  flex-direction: column;
 }
