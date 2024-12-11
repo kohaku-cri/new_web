@@ -24,9 +24,6 @@ export default function World(props: props) {
   const [isOpen, setIsOpen] = useState(false);
   const copyRightInfoOpen = () => setIsOpen(true);
   const copyRightInfoClose = () => setIsOpen(false);
-
-  console.log(isOpen);
-
   const aspect = 168;
   const hintAspect = 300;
   const pathName = usePathname();

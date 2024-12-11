@@ -1,6 +1,6 @@
 "use client";
 import style from "@/components/newsList.module.css";
-import { newsData } from "@/public/dataBase/newsData";
+import { newsData, tags } from "@/public/dataBase/newsData";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -9,6 +9,9 @@ export default function News() {
   const buttonOrder = () => {
     setorder((i) => !i);
   };
+  const [isOpen, setIsOpen] = useState(false);
+  const tagSearchOpen = () => setIsOpen(true);
+  const tagSearchClose = () => setIsOpen(false);
   const data = order ? newsData : newsData.slice().reverse();
 
   return (
@@ -22,6 +25,31 @@ export default function News() {
           {order ? "⇧" : "⇩"}
         </h2>
       </div>
+
+      <h3 className={style.tagSearch} onClick={tagSearchOpen}>
+        タグ検索
+      </h3>
+      {isOpen && (
+        <div className={style.background}>
+          <div className={style.tagsList}>
+            {/* ここにモーダルの中身を記述 */}
+            <div className={style.tags}>
+              {tags.map((item) => {
+                return (
+                  <div key={item}>
+                    <p className={style.checkBox}>■</p>
+                    <p>{item}</p>
+                  </div>
+                );
+              })}
+            </div>
+            <p className={style.erase} onClick={tagSearchClose}>
+              ポップアップを閉じる
+            </p>
+          </div>
+        </div>
+      )}
+
       {data.map((item) => {
         return (
           <div key={item.title}>
