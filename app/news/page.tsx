@@ -16,6 +16,9 @@ export default function News() {
 
   return (
     <div className={style.main}>
+      <h3 className={style.tagSearch} onClick={tagSearchOpen}>
+        タグ検索
+      </h3>
       <div className={style.topTitle}>
         <h2 className={style.changeOrder} onClick={buttonOrder}>
           {order ? "⇧" : "⇩"}
@@ -25,10 +28,8 @@ export default function News() {
           {order ? "⇧" : "⇩"}
         </h2>
       </div>
+        <p className={style.miniSize}>※矢印をクリックで順番変更</p>
 
-      <h3 className={style.tagSearch} onClick={tagSearchOpen}>
-        タグ検索
-      </h3>
       {isOpen && (
         <div className={style.background}>
           <div className={style.tagsList}>

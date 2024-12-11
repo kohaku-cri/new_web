@@ -18,7 +18,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
+}
+.miniSize {
+  font-size: 13px;
 }
 .title {
   width: 150px;
