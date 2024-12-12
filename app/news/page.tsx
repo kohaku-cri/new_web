@@ -12,13 +12,17 @@ export default function News() {
   const [isOpen, setIsOpen] = useState(false);
   const tagSearchOpen = () => setIsOpen(true);
   const tagSearchClose = () => setIsOpen(false);
-  const data = order ? newsData : newsData.slice().reverse();
 
+  const [selectedOption, setSelectedOption] = useState("全て");
+
+  const tagSearch = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setSelectedOption(event.target.value);
+  };
+  let data = newsData.filter((item) => item.tags.includes(selectedOption));
+  data = order ? data : data.slice().reverse();
+  // console.log(data);
   return (
     <div className={style.main}>
-      <h3 className={style.tagSearch} onClick={tagSearchOpen}>
-        タグ検索
-      </h3>
       <div className={style.topTitle}>
         <h2 className={style.changeOrder} onClick={buttonOrder}>
           {order ? "⇧" : "⇩"}
@@ -28,8 +32,13 @@ export default function News() {
           {order ? "⇧" : "⇩"}
         </h2>
       </div>
+      <div>
         <p className={style.miniSize}>※矢印をクリックで順番変更</p>
-
+      </div>
+      <h3 className={style.tagSearch} onClick={tagSearchOpen}>
+        タグ検索
+      </h3>
+      <p>検索：{selectedOption}</p>
       {isOpen && (
         <div className={style.background}>
           <div className={style.tagsList}>
@@ -38,19 +47,30 @@ export default function News() {
               {tags.map((item) => {
                 return (
                   <div key={item}>
-                    <input className={style.checkBox} type="checkbox" />
+                    <input
+                      className={style.checkBox}
+                      type="radio"
+                      value={item}
+                      name="tagSearch"
+                      onChange={tagSearch}
+                      checked={item === selectedOption}
+                    />
                     <p>{item}</p>
                   </div>
                 );
               })}
             </div>
-            <p className={style.erase} onClick={tagSearchClose}>
-              ポップアップを閉じる
+            <p
+              className={`${style.erase} ${style.tagSearch}`}
+              onClick={tagSearchClose}
+            >
+              閉じる
             </p>
           </div>
         </div>
       )}
 
+      <div className={style.searchResult}>
       {data.map((item) => {
         return (
           <div key={item.title}>
@@ -60,6 +80,7 @@ export default function News() {
           </div>
         );
       })}
+      </div>
     </div>
   );
 }
