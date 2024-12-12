@@ -1,4 +1,4 @@
-import style from "@/components/news.module.css";
+import style from "@/components/News/news.module.css";
 
 export default function information() {
   return (

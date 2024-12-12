@@ -9,8 +9,17 @@
   text-align: left;
   padding: 10px 0;
 }
-.main h2 {
+.tags {
   margin-bottom: 50px;
+}
+.tag {
+  margin-left: 10px;
+  background-color: var(--gray);
+  border-radius: 20px;
+  padding: 3px 10px;
+}
+.none {
+  display: none;
 }
 .main p {
   margin-top: 10px;
@@ -42,10 +51,10 @@
 .marTop110 {
   margin-top: 110px !important;
 }
-.marTop40{
+.marTop40 {
   margin-top: 40px;
 }
-.link{
+.link {
   border-bottom: 1px solid var(--colorColor);
 }
 .main table {

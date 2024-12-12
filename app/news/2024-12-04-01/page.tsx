@@ -1,17 +1,11 @@
-"use client";
-import style from "@/components/news.module.css";
-import { newsData } from "@/public/dataBase/newsData";
-import { usePathname } from "next/navigation";
+import style from "@/components/News/news.module.css";
+import News from "@/components/News/News";
 
-export default function News() {
-  const pathName = usePathname();
-  const foundData = newsData.find((item) => "/news/" + item.date === pathName);
-
+export default function NewsText() {
   return (
-    <div className={style.main}>
-      <div>
-        <div>
-          <h2>｜{foundData?.title}</h2>
+    <News
+      text={
+        <>
           <p>サイトの更新を行いました 変更点は以下の通りです</p>
           <h3 className={style.lightBlue}>〇 追加</h3>
           <p>・お知らせページ</p>
@@ -28,8 +22,8 @@ export default function News() {
           <p>・Next.js （React）</p>
           <h3 className={style.red}>〇 削除</h3>
           <p>・直に記述するHTML</p>
-        </div>
-      </div>
-    </div>
+        </>
+      }
+    />
   );
 }
