@@ -93,6 +93,9 @@
 .explain {
   margin-top: 40px;
 }
+.explain p {
+  font-size: 15px;
+}
 /* ヒント */
 
 .hints {

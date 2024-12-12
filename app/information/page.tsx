@@ -57,6 +57,13 @@ export default function information() {
           <h3 className={style.marTop110}>〇リンク</h3>
           <p>サイトへのリンクはご自由に行っていただいて構いません</p>
           <p>画像やファイルの直リンクはご遠慮ください</p>
+          <h3 className={style.marTop110}>〇免責とお願い</h3>
+          <p>
+            お知らせページやワールド紹介ページ、権利表示などに誤りのある可能性があります
+          </p>
+          <p>
+            もし作者のミスを見つけた際はTwitterのDMへこっそり教えていただけると助かります
+          </p>
           <h3 className={style.marTop200}>〇用語について</h3>
           <p>配信・・・ライブ、動画化、プレイ画像の公開</p>
           <p className={style.marTop110}>
