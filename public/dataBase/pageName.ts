@@ -1,0 +1,1 @@
+export const pageName = "｜こはく保管庫"

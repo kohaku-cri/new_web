@@ -5,6 +5,13 @@ import { mapdata, imgSize } from "@/public/dataBase/MapData";
 import Image from "next/image";
 import Link from "next/link";
 import { newsData } from "@/public/dataBase/newsData";
+import { pageName } from "@/public/dataBase/pageName"
+
+export const metadata = {
+  title: `ホームページ${pageName}`,
+  description: "こはくが制作した脱出マップなどを紹介するホームページ。過去作の一覧や最新作、最新の記事がチェックできます。",
+}
+
 
 export default function Home() {
   const getNews = newsData.slice(0, 6);
