@@ -21,6 +21,9 @@
 }
 .miniSize {
   font-size: 13px;
+  border-bottom: 1px solid var(--colorColor);
+  padding: 10px 40px;
+  display: inline-block;
 }
 .title {
   width: 150px;
@@ -44,6 +47,7 @@
 }
 .tags div {
   display: flex;
+  align-items: center;
   margin-left: 10px;
 }
 .tagSearch {
@@ -92,9 +96,13 @@
 .checkBox {
   cursor: pointer;
   user-select: none;
+  width: 20px;
+  height: 20px;
 }
 @media screen and (max-width: 1220px) {
   .tagsList {
     width: 90%;
+    min-height: 70%;
+    top: 55vh;
   }
 }

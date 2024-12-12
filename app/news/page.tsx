@@ -38,7 +38,7 @@ export default function News() {
               {tags.map((item) => {
                 return (
                   <div key={item}>
-                    <p className={style.checkBox}>■</p>
+                    <input className={style.checkBox} type="checkbox" />
                     <p>{item}</p>
                   </div>
                 );
