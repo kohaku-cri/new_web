@@ -7,7 +7,7 @@ export default function error404() {
       <h2 className={style.margin}>404Error</h2>
       <h2>ページが見つかりませんでした</h2>
       <p>削除されたか無効なURLです</p>
-      <ListButton url="/" title="ホームに戻る" />
+      <ListButton url="/" title="ホームに戻る" visibility="" />
     </div>
   );
 }

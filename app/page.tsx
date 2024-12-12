@@ -5,13 +5,13 @@ import { mapdata, imgSize } from "@/public/dataBase/MapData";
 import Image from "next/image";
 import Link from "next/link";
 import { newsData } from "@/public/dataBase/newsData";
-import { pageName } from "@/public/dataBase/pageName"
+import { pageName } from "@/public/dataBase/pageName";
 
 export const metadata = {
   title: `ホームページ${pageName}`,
-  description: "こはくが制作した脱出マップなどを紹介するホームページ。過去作の一覧や最新作、最新の記事がチェックできます。",
-}
-
+  description:
+    "こはくが制作した脱出マップなどを紹介するホームページ。過去作の一覧や最新作、最新の記事がチェックできます。",
+};
 
 export default function Home() {
   const getNews = newsData.slice(0, 6);
@@ -29,10 +29,12 @@ export default function Home() {
               alt={mapdata[0].alt || "代替テキストが設定されていません"}
             />
             <h2 className={style.newMapName}>{mapdata[0].mapName}</h2>
-            <p className={style.newMapDescription}>
-              {mapdata[0].date}
-            </p>
-            <ListButton url={mapdata[0].link} visibility="" title="詳しく見る" />
+            <p className={style.newMapDescription}>{mapdata[0].date}</p>
+            <ListButton
+              url={mapdata[0].link}
+              visibility=""
+              title="詳しく見る"
+            />
           </div>
           <div className={style.news}>
             <h1>｜お知らせ｜</h1>
@@ -43,7 +45,11 @@ export default function Home() {
                 </Link>
                 {getNews.map((item) => {
                   return (
-                    <Link href={`/news/${item.date}`} className={style.new} key={item.title}>
+                    <Link
+                      href={`/news/${item.date}`}
+                      className={style.new}
+                      key={item.title}
+                    >
                       {item.date} ・{item.title}
                     </Link>
                   );

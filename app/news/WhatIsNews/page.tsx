@@ -1,9 +1,9 @@
 import style from "@/components/News/news.module.css";
-import { pageName } from "@/public/dataBase/pageName"
+import { pageName } from "@/public/dataBase/pageName";
 
 export const metadata = {
   title: `お知らせとは？${pageName}`,
-}
+};
 
 export default function WhatIsNews() {
   return (

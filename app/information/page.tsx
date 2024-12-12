@@ -1,4 +1,9 @@
 import style from "@/components/News/news.module.css";
+import { pageName } from "@/public/dataBase/pageName";
+
+export const metadata = {
+  title: `ガイドライン${pageName}`,
+};
 
 export default function information() {
   return (
