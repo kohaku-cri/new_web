@@ -23,6 +23,9 @@ export default function News() {
   // console.log(data);
   return (
     <div className={style.main}>
+      <h3 className={style.tagSearch} onClick={tagSearchOpen}>
+        タグ検索
+      </h3>
       <div className={style.topTitle}>
         <h2 className={style.changeOrder} onClick={buttonOrder}>
           {order ? "⇧" : "⇩"}
@@ -35,10 +38,6 @@ export default function News() {
       <div>
         <p className={style.miniSize}>※矢印をクリックで順番変更</p>
       </div>
-      <h3 className={style.tagSearch} onClick={tagSearchOpen}>
-        タグ検索
-      </h3>
-      <p>検索：{selectedOption}</p>
       {isOpen && (
         <div className={style.background}>
           <div className={style.tagsList}>
@@ -60,26 +59,26 @@ export default function News() {
                 );
               })}
             </div>
-            <p
-              className={`${style.erase} ${style.tagSearch}`}
-              onClick={tagSearchClose}
-            >
+            <p className={style.erase} onClick={tagSearchClose}>
               閉じる
             </p>
           </div>
         </div>
       )}
+      <div className={style.margin}>
+        <div className={style.searchResult}>
+          <p className={style.searchText}>検索：{selectedOption}</p>
 
-      <div className={style.searchResult}>
-      {data.map((item) => {
-        return (
-          <div key={item.title}>
-            <Link href={`/news/${item.date}`}>
-              {item.date}・{item.title}
-            </Link>
-          </div>
-        );
-      })}
+          {data.map((item) => {
+            return (
+              <div key={item.title}>
+                <Link href={`/news/${item.date}`}>
+                  {item.date}・{item.title}
+                </Link>
+              </div>
+            );
+          })}
+        </div>
       </div>
     </div>
   );

@@ -3,7 +3,7 @@
   min-height: 100vh;
 }
 .main a {
-  margin-top: 30px;
+  margin: 10px 0;
   border-bottom: 1px solid var(--backgroundColor);
   padding: 0 10px;
 }
@@ -18,14 +18,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
+}
+.margin {
+  margin: 0 30%;
 }
 .searchResult {
   margin-top: 20px;
+  padding: 20px 0;
+  border-top: 1px solid var(--colorColor);
+}
+.searchText {
+  margin-bottom: 30px;
 }
 .miniSize {
   font-size: 13px;
-  border-bottom: 1px solid var(--colorColor);
   padding: 10px 40px;
   display: inline-block;
 }
@@ -57,13 +63,12 @@
 }
 .tagSearch {
   display: inline-block;
-  background-color: var(--buttonColor);
   padding: 5px 50px;
-  border-radius: 15px;
+  border: 1px solid var(--colorColor);
   cursor: pointer;
 }
 .tagSearch:hover {
-  background-color: var(--buttonHoverColor);
+  background-color: var(--gray);
   transition: 0.3s;
 }
 .background {
@@ -79,6 +84,15 @@
   bottom: 10px;
   right: 10px;
   padding: 10px 70px;
+  display: inline-block;
+  background-color: var(--buttonColor);
+  padding: 5px 50px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.erase:hover {
+  background-color: var(--buttonHoverColor);
+  transition: 0.3s;
 }
 .tagsList {
   background-color: var(--gray);
@@ -108,5 +122,10 @@
     width: 90%;
     min-height: 70%;
     top: 55vh;
+  }
+}
+@media screen and (max-width: 900px) {
+  .margin {
+    margin: 0 5%;
   }
 }
