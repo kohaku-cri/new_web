@@ -24,7 +24,7 @@ export default function News() {
   return (
     <div className={style.main}>
       <h3 className={style.tagSearch} onClick={tagSearchOpen}>
-        タグ検索
+        タグで検索
       </h3>
       <div className={style.topTitle}>
         <h2 className={style.changeOrder} onClick={buttonOrder}>

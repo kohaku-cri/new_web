@@ -58,7 +58,7 @@ export default function World(props: props) {
                   return <p>{item}</p>;
                 })}
                 <a className={style.erase} onClick={copyRightInfoClose}>
-                  ポップアップを閉じる
+                  閉じる
                 </a>
               </div>
             </div>

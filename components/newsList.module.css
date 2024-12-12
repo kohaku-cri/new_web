@@ -63,12 +63,13 @@
 }
 .tagSearch {
   display: inline-block;
-  padding: 5px 50px;
-  border: 1px solid var(--colorColor);
+  padding: 10px 50px;
+  background-color: var(--buttonColor);
+  border-radius: 20px;
   cursor: pointer;
 }
 .tagSearch:hover {
-  background-color: var(--gray);
+  background-color: var(--buttonHoverColor);
   transition: 0.3s;
 }
 .background {
