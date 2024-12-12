@@ -24,11 +24,11 @@
 }
 .searchResult {
   margin-top: 20px;
-  padding: 20px 0;
-  border-top: 1px solid var(--colorColor);
 }
 .searchText {
   margin-bottom: 30px;
+  border: 1px solid var(--colorColor);
+  padding: 10px 0;
 }
 .miniSize {
   font-size: 13px;

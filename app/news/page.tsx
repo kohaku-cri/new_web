@@ -67,7 +67,7 @@ export default function News() {
       )}
       <div className={style.margin}>
         <div className={style.searchResult}>
-          <p className={style.searchText}>検索：{selectedOption}</p>
+          <p className={style.searchText}>検索：{selectedOption}{" "}{"ヒット"}{data.length}{"件"}</p>
 
           {data.map((item) => {
             return (
