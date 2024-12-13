@@ -12,7 +12,7 @@ export function Footer() {
           YouTube
         </Link>
         <Link href="https://twitter.com/kohaku_cri" className={style.twitter}>
-          Twitter
+          X（Twitter）
         </Link>
         <Link
           href="https://bsky.app/profile/kohaku-cri.bsky.social"
