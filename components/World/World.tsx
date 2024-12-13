@@ -5,7 +5,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { ListButton } from "../Button/LinkButton";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { pageName } from "@/public/dataBase/pageName";
 
 type hint = {
   title?: string; // ヒントタイトル
@@ -28,7 +29,9 @@ export default function World(props: props) {
   const hintAspect = 300;
   const pathName = usePathname();
   const foundData = mapdata.find((item) => "/world/" + item.mapNum == pathName);
-
+  useEffect(() => {
+    document.title = `${foundData?.mapName}${pageName}`;
+  }, []);
   return (
     <div className={style.main}>
       <div className={style.margin}>

@@ -5,6 +5,7 @@ export const metadata = {
   title: `FQA${pageName}`,
 };
 
+
 export default function FQA() {
   return (
     <div className={style.main}>

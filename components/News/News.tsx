@@ -2,6 +2,8 @@
 import style from "@/components/News/news.module.css";
 import { newsData } from "@/public/dataBase/newsData";
 import { usePathname } from "next/navigation";
+import { useEffect } from "react";
+import { pageName } from "@/public/dataBase/pageName";
 
 type props = {
   text: JSX.Element;
@@ -10,6 +12,9 @@ type props = {
 export default function News(props: props) {
   const pathName = usePathname();
   const foundData = newsData.find((item) => "/news/" + item.date === pathName);
+  useEffect(() => {
+    document.title = `${foundData?.title}${pageName}`;
+  }, []);
   return (
     <div className={style.main}>
       <div>

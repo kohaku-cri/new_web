@@ -1,5 +1,10 @@
 import style from "@/components/error.module.css";
 import { ListButton } from "@/components/Button/LinkButton";
+import { pageName } from "@/public/dataBase/pageName";
+
+export const metadata = {
+  title: `404エラー${pageName}`,
+};
 
 export default function error404() {
   return (
