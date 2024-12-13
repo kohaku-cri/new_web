@@ -4,21 +4,74 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border-bottom: 1px solid var(--gray);
   position: fixed;
   top: 0;
   left: 0;
   z-index: 100;
   background-color: var(--backgroundColor);
+  /* border-bottom: 1px solid var(--colorColor); */
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.521);
 }
 .link {
-  margin: 0 2vw;
-  /* border-right: 2px solid var(--white);
-  border-left: 2px solid var(--white); */
+  margin: 0 1vw;
   padding: 10px 30px;
   border-bottom: 1px solid var(--backgroundColor);
 }
-.link:hover{
+.link:hover {
   border-bottom: 1px solid var(--colorColor);
+  transition: 0.3s;
+}
+.hamburgerMenuButton {
+  display: none;
+}
+@media screen and (max-width: 700px) {
+  .link {
+    display: none;
+  }
+}
+/* media 700pxに入れる */
+.hamburgerMenuButton {
+  display: inline;
+  position: fixed;
+  top: 11px;
+  left: 10px;
+  z-index: 101;
+  padding: 5px;
+  cursor: pointer;
+}
+.hamburgerMenuButton:hover {
+  background-color: var(--gray);
+  transition: 0.3s;
+}
+/* ここまで */
+.hamburgerMenu {
+  background-color: var(--gray);
+  position: fixed;
+  top: 0;
+  left: -80vw;
+  width: 80vw;
+  height: 100vh;
+  z-index: 102;
+  transition: left 0.3s ease;
+}
+.open {
+  left: 0;
+  opacity: 100;
+  transition: 0.3s ease;
+}
+.none {
+  opacity: 0;
+  transition: 0.3s ease;
+}
+.closeButton {
+  display: inline-block;
+  background-color: var(--buttonColor);
+  margin-top: 30px;
+  padding: 5px 10%;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.closeButton:hover {
+  background-color: var(--buttonHoverColor);
   transition: 0.3s;
 }
