@@ -8,6 +8,7 @@ export default function Snow() {
         position: "fixed",
         width: "100vw",
         height: "100vh",
+        zIndex: 300,
       }}
       snowflakeCount={60}
     />
