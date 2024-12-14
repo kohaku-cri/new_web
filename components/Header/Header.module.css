@@ -15,6 +15,7 @@
 .link {
   margin: 0 1vw;
   padding: 10px 30px;
+  border-bottom: 1px solid #00000000;
 }
 .link:hover {
   border-bottom: 1px solid var(--colorColor);

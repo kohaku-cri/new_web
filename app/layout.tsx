@@ -1,6 +1,6 @@
 import localFont from "next/font/local";
 import "./globals.css";
-import { Snow } from "@/components/Snow";
+import Snow from "@/components/Snow";
 import style from "@/components/Footer/Footer.module.css";
 import { Footer } from "@/components/Footer/Footer";
 import { Header } from "@/components/Header/Header";

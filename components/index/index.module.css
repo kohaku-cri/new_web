@@ -9,7 +9,7 @@
 /* 新着情報 */
 .newMapName {
   padding: 10px 20px;
-  border-bottom: 1px solid var(--white);
+  border-bottom: 1px solid var(--colorColor);
 }
 .sanserif {
   font-family: "NotoserifJP";
@@ -45,7 +45,7 @@
   color: var(--colorColor);
   margin-left: 20px;
   margin-bottom: 20px;
-  border-bottom: 1px solid var(--backgroundColor);
+  border-bottom: 1px solid #00000000;
 }
 .newsPlace a:hover {
   border-bottom: 1px solid var(--colorColor);

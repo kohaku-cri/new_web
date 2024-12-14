@@ -2,7 +2,7 @@
 
 import Snowfall from "react-snowfall";
 
-export function Snow() {
+export default function Snow() {
   return (
     <Snowfall
       style={{
