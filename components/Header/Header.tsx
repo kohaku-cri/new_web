@@ -46,6 +46,23 @@ export function Header() {
           <h3 className={style.closeButton} onClick={MenuClose}>
             メニューを閉じる
           </h3>
+          <div className={style.hamburgerLink}>
+          <Link href="/" onClick={MenuClose}>
+            ホーム
+          </Link>
+          <Link href="/information" onClick={MenuClose}>
+            ガイドライン
+          </Link>
+          <Link href="/news" onClick={MenuClose}>
+            お知らせ一覧
+          </Link>
+          <Link href="/tools" onClick={MenuClose}>
+            ツール
+          </Link>
+          <Link href="/fqa" onClick={MenuClose}>
+            FQA
+          </Link>
+          </div>
         </div>
       </div>
     </>

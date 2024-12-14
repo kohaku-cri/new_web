@@ -15,7 +15,6 @@
 .link {
   margin: 0 1vw;
   padding: 10px 30px;
-  border-bottom: 1px solid var(--backgroundColor);
 }
 .link:hover {
   border-bottom: 1px solid var(--colorColor);
@@ -28,31 +27,42 @@
   .link {
     display: none;
   }
+  /* media 700pxに入れる */
+  .hamburgerMenuButton {
+    display: inline;
+    position: fixed;
+    top: 11px;
+    left: 10px;
+    z-index: 101;
+    padding: 5px;
+    cursor: pointer;
+  }
+  .hamburgerMenuButton:hover {
+    background-color: var(--gray);
+    transition: 0.3s;
+  }
+  /* ここまで */
 }
-/* media 700pxに入れる */
-.hamburgerMenuButton {
-  display: inline;
-  position: fixed;
-  top: 11px;
-  left: 10px;
-  z-index: 101;
-  padding: 5px;
-  cursor: pointer;
-}
-.hamburgerMenuButton:hover {
-  background-color: var(--gray);
-  transition: 0.3s;
-}
-/* ここまで */
 .hamburgerMenu {
   background-color: var(--gray);
   position: fixed;
   top: 0;
   left: -80vw;
   width: 80vw;
-  height: 100vh;
+  height: 200vh;
   z-index: 102;
   transition: left 0.3s ease;
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.521);
+}
+.hamburgerLink {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.hamburgerLink a {
+  margin-top: 20px;
+  padding: 15px 0;
+  font-size: 20px;
 }
 .open {
   left: 0;
