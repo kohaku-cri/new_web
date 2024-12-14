@@ -20,9 +20,8 @@ export const tags: tags[] = [
   "技術的なお話",
   "日記帳",
 ];
-let Data: data[] = [
-  { title: "情報", date: "2024-12-04-02", tags: [1, 2] },
-  { title: "サイトの更新情報まとめ", date: "2024-12-04-01", tags: [1] },
+const Data: data[] = [
+  { title: "サイトの更新情報まとめ", date: "2024-12-04-01", tags: [8] },
 ];
 
 const newsData = Data.map((item) => {
