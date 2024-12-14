@@ -3,6 +3,7 @@
   background-color: var(--buttonColor);
   border-radius: 30px;
   margin-top: 20px;
+  user-select: none;
 }
 .LinkButton:hover {
   background-color: var(--buttonHoverColor);

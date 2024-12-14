@@ -29,6 +29,9 @@
   display: flex;
   align-items: center;
 }
+.iconCopyRight img {
+  user-select: none;
+}
 .iconCopyRight a {
   margin-left: 50px;
   padding: 7px 70px;

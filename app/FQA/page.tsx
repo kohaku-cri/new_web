@@ -6,7 +6,7 @@ export const metadata = {
 };
 
 
-export default function FQA() {
+export default function fqa() {
   return (
     <div className={style.main}>
       <h2>このページは現在準備中です...</h2>

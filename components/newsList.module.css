@@ -60,6 +60,7 @@
   align-items: center;
   margin-left: 10px;
   margin-top: 10px;
+  user-select: none;
 }
 .tagSearch {
   display: inline-block;
