@@ -11,6 +11,7 @@ export default function NewsText() {
           <p>・お知らせページ</p>
           <p>・公開状況の明確化</p>
           <p>・各ワールド紹介ページに権利情報を追加</p>
+          <p>・ヘッダー</p>
           <h3 className={style.green}>〇 変更</h3>
           <p>・全体的なデザイン</p>
           <p>・ガイドラインをもっと見やすく</p>
