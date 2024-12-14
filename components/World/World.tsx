@@ -31,7 +31,7 @@ export default function World(props: props) {
   const foundData = mapdata.find((item) => "/world/" + item.mapNum == pathName);
   useEffect(() => {
     document.title = `${foundData?.mapName}${pageName}`;
-  }, []);
+  }, [foundData?.mapName]);
   return (
     <div className={style.main}>
       <div className={style.margin}>

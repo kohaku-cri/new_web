@@ -14,7 +14,7 @@ export default function News(props: props) {
   const foundData = newsData.find((item) => "/news/" + item.date === pathName);
   useEffect(() => {
     document.title = `${foundData?.title}${pageName}`;
-  }, []);
+  }, [foundData?.title]);
   return (
     <div className={style.main}>
       <div>
