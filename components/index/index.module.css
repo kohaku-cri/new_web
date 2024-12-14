@@ -52,7 +52,7 @@
   transition: 0.3s;
 }
 .newsPlace div {
-  width: 80%;
+  width: 95%;
   text-align: left;
 }
 .fixationNew {
@@ -64,7 +64,7 @@
 }
 @media screen and (max-width: 640px) {
   .newsPlace {
-    width: 300px;
+    width: 330px;
     margin: 0 0;
     margin-top: 40px;
   }
