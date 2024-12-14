@@ -58,7 +58,7 @@ export default function World(props: props) {
                   </p>
                 )}
                 {foundData?.copyRight.map((item) => {
-                  return <p>{item}</p>;
+                  return <p key={item}>{item}</p>;
                 })}
                 <a className={style.erase} onClick={copyRightInfoClose}>
                   閉じる
