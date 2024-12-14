@@ -1,9 +1,9 @@
 import localFont from "next/font/local";
 import "./globals.css";
-import Snow from "@/components/Snow";
 import style from "@/components/Footer/Footer.module.css";
 import { Footer } from "@/components/Footer/Footer";
 import { Header } from "@/components/Header/Header";
+import Snowfall from "react-snowfall";
 
 const NotoSansJP = localFont({
   src: "./fonts/NotoSansJP-SemiBold.ttf",
@@ -26,7 +26,14 @@ export default function RootLayout({
         <link rel="icon" href="/img/favicon.svg" />
       </head>
       <body>
-        <Snow />
+        <Snowfall
+          style={{
+            position: "fixed",
+            width: "100vw",
+            height: "100vh",
+          }}
+          snowflakeCount={60}
+        />{" "}
         <Header />
         {children}
         <Footer />
