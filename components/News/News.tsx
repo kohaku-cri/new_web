@@ -20,23 +20,24 @@ export default function News(props: props) {
     <div className={style.main}>
       <div>
         <div>
-        <p className={style.date}>投稿日 {date}</p>
+          <p className={style.date}>投稿日 {date}</p>
           <h2>｜{foundData?.title}</h2>
-          <p className={style.tags}>
-            タグ：
-            {foundData?.tags.map((item) => {
-              return (
-                <span
-                  className={`${style.tag} ${
-                    foundData.tags[0] === item ? style.none : null
-                  }`}
-                  key={item}
-                >
-                  {item}
-                </span>
-              );
-            })}
-          </p>
+          <div className={style.tags}>
+            <p>タグ：</p>
+              {foundData?.tags.map((item) => {
+                return (
+                  <p
+                    className={`${style.tag} ${
+                      foundData.tags[0] === item ? style.none : null
+                    }`}
+                    key={item}
+                  >
+                    {item}
+                  </p>
+                );
+              })}
+          </div>
+
           {props.text}
         </div>
       </div>

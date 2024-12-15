@@ -9,10 +9,13 @@
   text-align: left;
   padding: 10px 0;
 }
-.tags {
-  margin-bottom: 50px;
+.tags{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 !important;
 }
-.tag {
+.tag{
   margin-left: 10px;
   background-color: var(--gray);
   border-radius: 20px;
@@ -45,7 +48,7 @@
 }
 @media screen and (max-width: 800px) {
   .main div {
-    margin: 0 5px;
+    margin: 0 10px;
   }
 }
 .marTop400 {
