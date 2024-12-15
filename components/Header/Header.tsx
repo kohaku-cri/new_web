@@ -24,7 +24,7 @@ export function Header() {
         <Link href="/tools" className={style.link}>
           ツール
         </Link>
-        <Link href="/fqa" className={style.link}>
+        <Link href="/FQA" className={style.link}>
           FQA
         </Link>
       </div>
