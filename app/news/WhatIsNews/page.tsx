@@ -23,7 +23,7 @@ export default function WhatIsNews() {
           <h3 className={style.marTop110}>URLと日付の意味</h3>
           <p>西暦ー月ー日ー番号</p>
           <h3 className={style.marTop400}>お知らせの秘めたる目的</h3>
-          <p>こはくさん（作者）の文章力上昇のため</p>
+          <p>こはくさん（作者）の文章力向上のため</p>
         </div>
       </div>
     </div>
