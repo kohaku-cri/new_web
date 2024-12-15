@@ -12,6 +12,7 @@ type props = {
 export default function News(props: props) {
   const pathName = usePathname();
   const foundData = newsData.find((item) => "/news/" + item.date === pathName);
+  const date = foundData?.date.slice(0, -3);
   useEffect(() => {
     document.title = `${foundData?.title}${pageName}`;
   }, [foundData?.title]);
@@ -19,7 +20,7 @@ export default function News(props: props) {
     <div className={style.main}>
       <div>
         <div>
-        <p className={style.date}>投稿日 {foundData?.date}</p>
+        <p className={style.date}>投稿日 {date}</p>
           <h2>｜{foundData?.title}</h2>
           <p className={style.tags}>
             タグ：

@@ -5,7 +5,7 @@
 .main div {
   margin: 0 15%;
   /* background-color: var(--white); */
-  color: var(--white);
+  color: var(--colorColor);
   text-align: left;
   padding: 10px 0;
 }
@@ -45,8 +45,11 @@
 }
 @media screen and (max-width: 800px) {
   .main div {
-    margin: 0 20px;
+    margin: 0 5px;
   }
+}
+.marTop400 {
+  margin-top: 400px !important;
 }
 .marTop200 {
   margin-top: 200px !important ;
@@ -62,6 +65,11 @@
 }
 .link {
   border-bottom: 1px solid var(--colorColor);
+}
+.link:hover {
+  color: var(--linkColor);
+  border-bottom: 1px solid var(--linkColor);
+  transition: 0.3s;
 }
 .main table {
   margin-top: 40px;
