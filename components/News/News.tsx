@@ -19,6 +19,7 @@ export default function News(props: props) {
     <div className={style.main}>
       <div>
         <div>
+        <p className={style.date}>投稿日 {foundData?.date}</p>
           <h2>｜{foundData?.title}</h2>
           <p className={style.tags}>
             タグ：

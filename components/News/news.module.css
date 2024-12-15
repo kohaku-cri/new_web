@@ -18,6 +18,9 @@
   border-radius: 20px;
   padding: 3px 10px;
 }
+.date {
+  margin-bottom: 30px;
+}
 .none {
   display: none;
 }
