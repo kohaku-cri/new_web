@@ -9,7 +9,7 @@ export default function NewsText() {
         <>
           <p className={style.marTop40}>もうすぐクリスマスですね！</p>
           <p>
-            本来は去年と同じようにクリスマスに関連する脱出マップを制作するつもりだったのですが
+            本来なら去年と同じようにクリスマスに関連する脱出マップを制作するつもりだったのですが
           </p>
           <p>
             主にモチベが理由で何も手を付けず気が付けば１２月に突入していました
@@ -30,6 +30,7 @@ export default function NewsText() {
           <p>降雪の演出は <a href="https://github.com/cahilfoley/react-snowfall" className={style.link}>react-snowfall</a> というパッケージを使わせていただきました</p>
           <p>reactの名前が含まれていますがバニラのJSでも動作するとのことです</p>
           <p>もし何らかのサイトを管理している方がいましたら是非導入してみてくださいね⛄</p>
+<p>降雪量や色なども細かく設定できるのでめちゃくちゃおすすめです</p>
         </>
       }
     />
