@@ -7,7 +7,7 @@ export default function NewsText() {
     <News
       text={
         <>
-          <p>もうすぐクリスマスですね！</p>
+          <p className={style.marTop40}>もうすぐクリスマスですね！</p>
           <p>
             本来は去年と同じようにクリスマスに関連する脱出マップを制作するつもりだったのですが
           </p>

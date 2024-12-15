@@ -6,7 +6,7 @@ export default function NewsText() {
     <News
       text={
         <>
-          <p>サイトの更新を行いました 変更点は以下の通りです</p>
+          <p className={style.marTop40}>サイトの更新を行いました 変更点は以下の通りです</p>
           <h3 className={style.lightBlue}>〇 追加</h3>
           <p>・お知らせページ</p>
           <p>・公開状況の明確化</p>
