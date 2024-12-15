@@ -50,6 +50,9 @@
   .main div {
     margin: 0 10px;
   }
+  .main p {
+    margin-top: 5px;
+  }
 }
 .marTop400 {
   margin-top: 400px !important;
