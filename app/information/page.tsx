@@ -69,6 +69,9 @@ export default function information() {
           <p>
             もし作者のミスを見つけた際はTwitterのDMへこっそり教えていただけると助かります
           </p>
+          <h3 className={style.marTop110}>〇ガイドラインの改定について</h3>
+          <p>ガイドラインは改定される場合があります</p>
+          <p>改定の際はどれだけ小さな変更でも「ルール改定」のタグを付け、変更点を明示したお知らせ記事を掲載します</p>
           <h3 className={style.marTop200}>〇用語について</h3>
           <p>配信・・・ライブ、動画化、プレイ画像の公開</p>
           <p className={style.marTop110}>
