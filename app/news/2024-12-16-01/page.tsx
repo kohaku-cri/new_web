@@ -21,8 +21,10 @@ export default function NewsText() {
           <h2 className={style.marTop200}>｜技術的なお話</h2>
           <h3 className={style.lightBlue}>〇 追加</h3>
           <p>・Next.js （React）</p>
+          <p>・GoatCounter</p>
           <h3 className={style.red}>〇 削除</h3>
           <p>・直に記述するHTML</p>
+          <p>・Googleアナリティクス</p>
         </>
       }
     />
