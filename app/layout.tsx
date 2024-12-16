@@ -26,11 +26,11 @@ export default function RootLayout({
     <html lang="ja" className={`${NotoSansJP.className} ${Potta.className}`}>
       <head>
         <link rel="icon" href={`${BASE_PATH}/img/favicon.svg`} />
-        <script
+        {/* <script
           data-goatcounter="https://kohaku-cri.goatcounter.com/count"
           async
           src="//gc.zgo.at/count.js"
-        ></script>
+        ></script> */}
       </head>
       <body>
         <Snow />
