@@ -138,7 +138,7 @@ export default function World(props: props) {
               >
                 <Link href={item.link}>
                   <Image
-                    src={`${BASE_PATH}/${item.mapImgLink}`}
+                    src={item.mapImgLink}
                     alt={item.alt || "代替テキストが設定されていません"}
                     width={aspect}
                     height={aspect * 0.5625}

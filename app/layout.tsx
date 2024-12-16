@@ -4,6 +4,8 @@ import style from "@/components/Footer/Footer.module.css";
 import { Footer } from "@/components/Footer/Footer";
 import { Header } from "@/components/Header/Header";
 import Snow from "@/components/Snow";
+import nextConfig from "../next.config";
+const BASE_PATH = nextConfig.basePath || "";
 
 const NotoSansJP = localFont({
   src: "./fonts/NotoSansJP-SemiBold.ttf",
@@ -23,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="ja" className={`${NotoSansJP.className} ${Potta.className}`}>
       <head>
-        <link rel="icon" href="/img/favicon.svg" />
+        <link rel="icon" href={`${BASE_PATH}/img/favicon.svg`} />
       </head>
       <body>
         <Snow />
