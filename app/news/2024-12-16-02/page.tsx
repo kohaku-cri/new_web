@@ -1,5 +1,6 @@
 import style from "@/components/News/news.module.css";
 import News from "@/components/News/News";
+// import NewsImg from "@/components/NewsImg/NewsImg";
 
 export default function NewsText() {
   // 下線はclass link
@@ -22,7 +23,7 @@ export default function NewsText() {
           <p>大体は旧サイトのデザインを参考にしましたが一部を変更したり新機能を追加したりしてみました</p>
           <p>旧サイトよりもより見やすく便利なったかなと思います</p>
           <p className={style.marTop40}>
-            さて話は変わりますが今このサイトには雪が降っていますね
+            さて話は変わりますが今このサイトには雪が降っています
           </p>
           <p>クリスマスシーズンの期間限定として追加してみました</p>
           <p>（クリスマス関連のページは常に降らせるかも・・）</p>
@@ -30,7 +31,7 @@ export default function NewsText() {
           <p>降雪の演出は <a href="https://github.com/cahilfoley/react-snowfall" className={style.link}>react-snowfall</a> というパッケージを使わせていただきました</p>
           <p>reactの名前が含まれていますがバニラのJSでも動作するとのことです</p>
           <p>もし何らかのサイトを管理している方がいましたら是非導入してみてくださいね⛄</p>
-<p>降雪量や色など細かく設定できるのでめちゃくちゃおすすめです</p>
+          <p>降雪量や色など細かく設定できるのでめちゃくちゃおすすめです</p>
         </>
       }
     />
