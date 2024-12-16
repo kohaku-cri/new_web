@@ -1,3 +1,6 @@
+import nextConfig from "../../next.config";
+const BASE_PATH = nextConfig.basePath || "";
+
 type Map = {
   mapNum: string;
   mapName: string;
@@ -41,7 +44,7 @@ export const mapdata: Map[] = [
   {
     mapNum: "8",
     mapName: "魔法使いと空の孤島",
-    mapImgLink: "/img/8.jpg",
+    mapImgLink: `${BASE_PATH}/img/8.jpg`,
     link: "/world/8",
     youtube: "https://www.youtube.com/embed/nmF8JFw_GZI?si=EMaC0JICYQ7zPgUm",
     distributionLink: "https://minecraft-mcworld.com/105151/",
