@@ -23,8 +23,8 @@ export const tags: tags[] = [
 ];
 const Data: data[] = [
   // 新規記事は一番上に追加
-  { title: "もーいくつ寝るとークリスマス", date: "2024-12-16-02", tags: [8,11,12] },
-  { title: "サイトの更新情報まとめ", date: "2024-12-16-01", tags: [8] },
+  { title: "もーいくつ寝るとークリスマス", date: "2024-12-17-02", tags: [8,11,12] },
+  { title: "サイトの更新情報まとめ", date: "2024-12-17-01", tags: [8,11] },
 ];
 
 const newsData = Data.map((item) => {

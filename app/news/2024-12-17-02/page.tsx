@@ -30,7 +30,7 @@ export default function NewsText() {
           <p>雪を降らせただけなのに一気に雰囲気を演出することができてとても満足しています♪</p>
           <p>降雪の演出は <a href="https://github.com/cahilfoley/react-snowfall" className={style.link}>react-snowfall</a> というパッケージを使わせていただきました</p>
           <p>reactの名前が含まれていますがバニラのJSでも動作するとのことです</p>
-          <p>もし何らかのサイトを管理している方がいましたら是非導入してみてくださいね⛄</p>
+          <p>もし何らかのサイトを管理している方がいましたら是非導入してみてください⛄</p>
           <p>降雪量や色など細かく設定できるのでめちゃくちゃおすすめです</p>
         </>
       }
