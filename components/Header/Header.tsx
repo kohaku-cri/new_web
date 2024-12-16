@@ -3,8 +3,10 @@ import Link from "next/link";
 import style from "@/components/Header/Header.module.css";
 import Image from "next/image";
 import { useState } from "react";
+import nextConfig from "../../next.config";
 
 export function Header() {
+  const BASE_PATH = nextConfig.basePath || "";
   const [hamburgerMenu, sethamburgerMenu] = useState(false);
   const MenuOpen = () => sethamburgerMenu(true);
   const MenuClose = () => sethamburgerMenu(false);
@@ -30,7 +32,7 @@ export function Header() {
       </div>
       <div className={style.phoneHeader}>
         <Image
-          src={"/img/hamburger.png"}
+          src={`${BASE_PATH}/img/hamburger.png`}
           alt=""
           width={42}
           height={42}

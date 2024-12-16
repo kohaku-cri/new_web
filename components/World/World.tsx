@@ -7,6 +7,7 @@ import { usePathname } from "next/navigation";
 import { ListButton } from "../Button/LinkButton";
 import { useState, useEffect } from "react";
 import { pageName } from "@/public/dataBase/pageName";
+import nextConfig from "../../next.config";
 
 type hint = {
   title?: string; // ヒントタイトル
@@ -22,6 +23,7 @@ type props = {
 };
 
 export default function World(props: props) {
+  const BASE_PATH = nextConfig.basePath || "";
   const [isOpen, setIsOpen] = useState(false);
   const copyRightInfoOpen = () => setIsOpen(true);
   const copyRightInfoClose = () => setIsOpen(false);
@@ -45,7 +47,12 @@ export default function World(props: props) {
             #{foundData?.mapNum} {foundData?.mapName}
           </h2>
           <div className={style.iconCopyRight}>
-            <Image src="/img/favicon.svg" width={48} height={48} alt="" />
+            <Image
+              src={`${BASE_PATH}/img/favicon.svg`}
+              width={48}
+              height={48}
+              alt=""
+            />
             <a onClick={copyRightInfoOpen}>権利情報を確認する</a>
           </div>
           {isOpen && (
@@ -131,7 +138,7 @@ export default function World(props: props) {
               >
                 <Link href={item.link}>
                   <Image
-                    src={item.mapImgLink}
+                    src={`${BASE_PATH}/${item.mapImgLink}`}
                     alt={item.alt || "代替テキストが設定されていません"}
                     width={aspect}
                     height={aspect * 0.5625}
