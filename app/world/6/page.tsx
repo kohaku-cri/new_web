@@ -1,4 +1,5 @@
 import { ListButton } from "@/components/Button/LinkButton";
+import Snow from "@/components/Snow";
 import World from "@/components/World/World";
 
 export default function Worlds() {
@@ -7,6 +8,7 @@ export default function Worlds() {
       explain={
         //ここに概要欄の内容を入力 JSX（ヒント＆答えは別箇所）
         <>
+          <Snow />
           <h3>ヒント＆答え</h3>
           <p>Googleサイトにて公開中</p>
           <ListButton

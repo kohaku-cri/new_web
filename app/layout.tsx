@@ -3,7 +3,6 @@ import "./globals.css";
 import style from "@/components/Footer/Footer.module.css";
 import { Footer } from "@/components/Footer/Footer";
 import { Header } from "@/components/Header/Header";
-import Snow from "@/components/Snow";
 import nextConfig from "../next.config";
 const BASE_PATH = nextConfig.basePath || "";
 
@@ -33,7 +32,6 @@ export default function RootLayout({
         ></script>
       </head>
       <body>
-        <Snow />
         <Header />
         {children}
         <Footer />

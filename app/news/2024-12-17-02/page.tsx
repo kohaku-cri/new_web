@@ -1,5 +1,6 @@
 import style from "@/components/News/news.module.css";
 import News from "@/components/News/News";
+import Snow from "@/components/Snow";
 // import NewsImg from "@/components/NewsImg/NewsImg";
 
 export default function NewsText() {
@@ -8,6 +9,7 @@ export default function NewsText() {
     <News
       text={
         <>
+          <Snow />
           <p className={style.marTop40}>もうすぐクリスマスですね！</p>
           <p>
             本来なら去年と同じようにクリスマスに関連する脱出マップを制作するつもりだったのですが
