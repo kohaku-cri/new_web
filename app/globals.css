@@ -19,6 +19,9 @@
 
   /* --Potta: var(--Potta) */
 }
+html {
+  scroll-behavior: smooth;
+}
 details {
   font-family: "NotoSansJP";
 }

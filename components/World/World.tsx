@@ -97,6 +97,10 @@ export default function World(props: props) {
             <div className={style.explain}>
               <div>{props.explain}</div>
             </div>
+            <div className={style.bugFixHistoryLink}>
+              <h2>バグ修正履歴</h2>
+              <ListButton url="#bugsFixHistory" title="確認する" visibility="" />
+            </div>
             <div className={style.hints}>
               {props.hint.length > 0 && <h2>～ヒント一覧～</h2>}
               {props.hint.map((item: hint) => {
@@ -125,6 +129,14 @@ export default function World(props: props) {
                   </details>
                 );
               })}
+              <ListButton url="#top" title="ページの一番上へ" visibility="" />
+            </div>
+            <div className={style.bugsFixHistory} id="bugsFixHistory">
+              <h2>～バグ修正履歴～</h2>
+
+              <h3>修正済みの問題</h3>
+
+              <h3>既知の問題</h3>
             </div>
           </div>
         </div>

@@ -140,6 +140,11 @@
 .colorFalse::after {
   content: "（答え）";
 }
+/* バグ修正情報 */
+.bugsFixHistory {
+  margin-top: 70px;
+}
+
 /* 他の作品一覧 */
 .mapListTitle {
   text-align: center;
