@@ -102,13 +102,15 @@ export default function World(props: props) {
             <div className={style.explain}>
               <div>{props.explain}</div>
             </div>
-            <div className={style.bugFixHistoryLink}>
-              <ListButton
-                url="#bugsFixHistory"
-                title="バグ修正情報"
-                visibility=""
-              />
-            </div>
+            {props.hint.length > 0 && (
+              <div className={style.bugFixHistoryLink}>
+                <ListButton
+                  url="#bugsFixHistory"
+                  title="バグ修正情報"
+                  visibility=""
+                />
+              </div>
+            )}
             <div className={style.hints}>
               {props.hint.length > 0 && <h2>～ヒント一覧～</h2>}
               {props.hint.map((item: hint) => {
@@ -137,7 +139,9 @@ export default function World(props: props) {
                   </details>
                 );
               })}
-              <ListButton url="#top" title="ページの一番上へ" visibility="" />
+              {props.hint.length > 0 && (
+                <ListButton url="#top" title="ページの一番上へ" visibility="" />
+              )}
             </div>
 
             <div className={style.bugsFixHistory} id="bugsFixHistory">
