@@ -140,10 +140,6 @@
 .colorFalse::after {
   content: "（答え）";
 }
-/* バグ修正情報 */
-.bugsFixHistory {
-  margin-top: 70px;
-}
 
 /* 他の作品一覧 */
 .mapListTitle {
@@ -222,4 +218,32 @@
 }
 .local {
   background-color: var(--red);
+}
+
+/* バグ修正情報 */
+.bugsFixHistory {
+  margin-top: 140px;
+}
+.tip{
+  font-size: 15px;
+}
+.a {
+  background-color: var(--red);
+}
+.b {
+  background-color: var(--yellow);
+}
+.c {
+  background-color: var(--green);
+}
+.bugsFixHistory th,
+.bugsFixHistory td {
+  border: 2px solid var(--colorColor);
+  font-size: 16px;
+}
+@media screen and (max-width: 750px) {
+  .main th,
+  .main td {
+    font-size: 14px;
+  }
 }

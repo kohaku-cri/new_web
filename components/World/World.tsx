@@ -98,8 +98,11 @@ export default function World(props: props) {
               <div>{props.explain}</div>
             </div>
             <div className={style.bugFixHistoryLink}>
-              <h2>バグ修正履歴</h2>
-              <ListButton url="#bugsFixHistory" title="確認する" visibility="" />
+              <ListButton
+                url="#bugsFixHistory"
+                title="バグ修正情報"
+                visibility=""
+              />
             </div>
             <div className={style.hints}>
               {props.hint.length > 0 && <h2>～ヒント一覧～</h2>}
@@ -132,11 +135,26 @@ export default function World(props: props) {
               <ListButton url="#top" title="ページの一番上へ" visibility="" />
             </div>
             <div className={style.bugsFixHistory} id="bugsFixHistory">
-              <h2>～バグ修正履歴～</h2>
-
-              <h3>修正済みの問題</h3>
-
-              <h3>既知の問題</h3>
+              <h2>｜修正済みのバグ</h2>
+              <table>
+                <tr>
+                  <th>概要</th>
+                  <th>修正日</th>
+                  <th>重要度</th>
+                </tr>
+                <tr>
+                  <td>民家の隣の小道から未解放エリアへ行けてしまう問題</td>
+                  <td>2025/01/25</td>
+                  <td className={style.importance}>A</td>
+                </tr>
+                <tr>
+                  <td>民家の隣の小道から未解放エリアへ行けてしまう問題</td>
+                  <td>2025/01/25</td>
+                  <td>A</td>
+                </tr>
+              </table>
+              {/* こちらをリンクにしお知らせ記事に */}
+              <p className={style.tip}>※重要度についてはこちら</p>
             </div>
           </div>
         </div>
