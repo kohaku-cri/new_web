@@ -36,7 +36,7 @@ export default function RootLayout({
         {children}
         <Footer />
         <p className={style.copyRight}>
-          © 2024 <cite translate="no"> こはく kohaku</cite>
+          © 2024–2025 <cite translate="no"> こはく kohaku</cite>
         </p>
       </body>
     </html>
