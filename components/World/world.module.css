@@ -231,10 +231,13 @@
   background-color: var(--red);
 }
 .b {
-  background-color: var(--yellow);
+  background-color: var(--orange);
 }
 .c {
   background-color: var(--green);
+}
+.noBug{
+  margin-top: 20px;
 }
 .bugsFixHistory th,
 .bugsFixHistory td {

@@ -16,10 +16,15 @@ type hint = {
   img?: string; // 表示する画像リンク (省略可能)
   alt?: string; // 画像の代替テキスト (imgが指定された場合は必須)
 };
-
+type bugsFix = {
+  title: string;
+  date: string;
+  importance: string;
+};
 type props = {
   explain: JSX.Element; // 概要欄の内容
   hint: hint[]; // ヒント配列
+  bugsFix: bugsFix[]; // バグ修正情報配列
 };
 
 export default function World(props: props) {
@@ -134,27 +139,42 @@ export default function World(props: props) {
               })}
               <ListButton url="#top" title="ページの一番上へ" visibility="" />
             </div>
+
             <div className={style.bugsFixHistory} id="bugsFixHistory">
               <h2>｜修正済みのバグ</h2>
-              <table>
-                <tr>
-                  <th>概要</th>
-                  <th>修正日</th>
-                  <th>重要度</th>
-                </tr>
-                <tr>
-                  <td>民家の隣の小道から未解放エリアへ行けてしまう問題</td>
-                  <td>2025/01/25</td>
-                  <td className={style.importance}>A</td>
-                </tr>
-                <tr>
-                  <td>民家の隣の小道から未解放エリアへ行けてしまう問題</td>
-                  <td>2025/01/25</td>
-                  <td>A</td>
-                </tr>
-              </table>
-              {/* こちらをリンクにしお知らせ記事に */}
-              <p className={style.tip}>※重要度についてはこちら</p>
+              {props.bugsFix.length > 0 ? (
+                <div>
+                  <table>
+                    <tr>
+                      <th>概要</th>
+                      <th>修正日</th>
+                      <th>重要度</th>
+                    </tr>
+
+                    {props.bugsFix.map((item) => {
+                      return (
+                        <tr>
+                          <td>{item.title}</td>
+                          <td>{item.date}</td>
+                          {item.importance == "A" ? (
+                            <td className={style.a}>A</td>
+                          ) : null}
+                          {item.importance == "B" ? (
+                            <td className={style.b}>B</td>
+                          ) : null}
+                          {item.importance == "C" ? (
+                            <td className={style.c}>C</td>
+                          ) : null}
+                        </tr>
+                      );
+                    })}
+                  </table>
+                  {/* こちらをリンクにしお知らせ記事に */}
+                  <p className={style.tip}>※重要度についてはこちら</p>
+                </div>
+              ) : (
+                <p className={style.noBug}>修正されたバグはありません</p>
+              )}
             </div>
           </div>
         </div>
