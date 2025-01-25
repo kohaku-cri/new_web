@@ -174,7 +174,7 @@ export default function World(props: props) {
                     })}
                   </table>
                   {/* こちらをリンクにしお知らせ記事に */}
-                  <p className={style.tip}>※重要度についてはこちら</p>
+                  <p className={style.tip}>※重要度と修正日についてはこちら</p>
                 </div>
               ) : (
                 <p className={style.noBug}>修正されたバグはありません</p>
