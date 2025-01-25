@@ -150,7 +150,7 @@ export const mapdata: Map[] = [
     copyRight: [],
   },
 ];
-const aspect = 300;
+const aspect = 310;
 export const imgSize = {
   width: aspect,
   height: aspect * 0.5625,
