@@ -10,7 +10,12 @@ type props = {
 export function ListButton(props: props) {
   return (
     <div>
-      <Link href={props.url} className={`${style.LinkButton} ${props.visibility == "local" ? style.none : null}`}>
+      <Link
+        href={props.url}
+        className={`${style.LinkButton}
+       ${props.visibility == "local" ? style.local : null}
+       `}
+      >
         {props.title}
       </Link>
     </div>

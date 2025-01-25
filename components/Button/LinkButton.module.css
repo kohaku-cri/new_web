@@ -9,6 +9,9 @@
   background-color: var(--buttonHoverColor);
   transition: 0.3s;
 }
-.none {
-  visibility: hidden;
+.local {
+  background-color: var(--gray);
+}
+.local:hover {
+  background-color: var(--gray);
 }
