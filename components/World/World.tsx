@@ -157,7 +157,7 @@ export default function World(props: props) {
 
                     {props.bugsFix.map((item) => {
                       return (
-                        <tr>
+                        <tr key={item.title}>
                           <td>{item.title}</td>
                           {item.date == "" ? <td>-</td> : <td>{item.date}</td>}
                           {item.importance == "A" ? (
