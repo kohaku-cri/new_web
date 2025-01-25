@@ -47,10 +47,10 @@ export default function Worlds() {
       ]}
       // 空配列の場合は情報は「修正されたバグはありません」と表示される
       // title バグ修正の概要
-      // date 修正日
+      // date 修正日 （""　空文字列の場合はハイフンが表示）
       // importance バグの重要度（A＝非常に重大、B＝通常の問題、C＝軽微な問題）
       bugsFix={[
-        {title:"民家の隣の小道から未解放エリアへ行けてしまう問題",date:"不明",importance:"A"},
+        {title:"民家の隣の小道から未解放エリアへ行けてしまう問題",date:"",importance:"A"},
       ]}
     />
   );

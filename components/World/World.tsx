@@ -159,7 +159,7 @@ export default function World(props: props) {
                       return (
                         <tr>
                           <td>{item.title}</td>
-                          <td>{item.date}</td>
+                          {item.date == "" ? <td>-</td> : <td>{item.date}</td>}
                           {item.importance == "A" ? (
                             <td className={style.a}>A</td>
                           ) : null}
