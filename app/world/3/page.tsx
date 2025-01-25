@@ -21,7 +21,9 @@ export default function Worlds() {
       // date 修正日
       // importance バグの重要度（A＝非常に重大、B＝通常の問題、C＝軽微な問題）
       bugsFix={[
-        {title:"民家の隣の小道から未解放エリアへ行けてしまう問題",date:"不明",importance:"A"},
+        {title:"様々なバグを修正",date:"",importance:"C"},
+        {title:"タイトルの一部を削除",date:"",importance:"C"},
+
       ]}
     />
   );

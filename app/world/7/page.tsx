@@ -21,7 +21,12 @@ export default function Worlds() {
       // date 修正日
       // importance バグの重要度（A＝非常に重大、B＝通常の問題、C＝軽微な問題）
       bugsFix={[
-        {title:"民家の隣の小道から未解放エリアへ行けてしまう問題",date:"不明",importance:"A"},
+        {title:"トウヒの木が異変17に置かれている問題",date:"",importance:"B"},
+        {title:"細かい問題",date:"",importance:"C"},
+        {title:"switchやスマホにて黒板などの一部ブロックが正しく表示されない問題",date:"",importance:"A"},
+        {title:"ver1.21.20アップデートに対応（応急的修正）",date:"",importance:"A"},
+        {title:"一部の異変が機能していない問題",date:"",importance:"B"},
+
       ]}
     />
   );

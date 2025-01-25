@@ -32,7 +32,18 @@ export default function Worlds() {
       // date 修正日
       // importance バグの重要度（A＝非常に重大、B＝通常の問題、C＝軽微な問題）
       bugsFix={[
-        {title:"民家の隣の小道から未解放エリアへ行けてしまう問題",date:"不明",importance:"A"},
+        {title:"本の補足を追加",date:"",importance:"C"},
+        {title:"井戸から水が採取可能な問題",date:"",importance:"B"},
+        {title:"サンタ帽がダメージにより壊れてしまう問題",date:"",importance:"C"},
+        {title:"ブーツがマルチ時正しく動作しない問題",date:"",importance:"B"},
+        {title:"光源の調整",date:"",importance:"C"},
+        {title:"マルチ時パワースターが正しく動作しない問題",date:"",importance:"B"},
+        {title:"画面中央に不適当なUIが表示される問題",date:"",importance:"B"},
+        {title:"サンタ帽が被れない問題",date:"",importance:"B"},
+        {title:"ver1.21.30にて予定されているバナーテクスチャ変更に対応",date:"",importance:"C"},
+        {title:"cameraコマンドの修正",date:"",importance:"A"},
+        {title:"画用紙の名前が正しく表示されない問題（バージョンアップにより発生）",date:"2025/1/25",importance:"A"},
+
       ]}
     />
   );

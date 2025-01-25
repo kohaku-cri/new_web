@@ -50,7 +50,14 @@ export default function Worlds() {
       // date 修正日 （""　空文字列の場合はハイフンが表示）
       // importance バグの重要度（A＝非常に重大、B＝通常の問題、C＝軽微な問題）
       bugsFix={[
-        {title:"民家の隣の小道から未解放エリアへ行けてしまう問題",date:"",importance:"A"},
+        {title:"駅の隣の小道から未開放エリアへ行けてしまう問題",date:"",importance:"A"},
+        {title:"民家の前の道に穴がありコマンドルームへ侵入できてしまう問題",date:"",importance:"A"},
+        {title:"緑の家の１階の窓が割れている問題",date:"",importance:"A"},
+        {title:"マルチ時クッキー瓶が複数入手可能な問題",date:"",importance:"B"},
+        {title:"一部の天井や壁に穴があいている問題",date:"",importance:"C"},
+        {title:"一部アスレのナビ追加と簡易化",date:"",importance:"B"},
+        {title:"巨木からアスレにより青の家の屋根へと渡れてしまう問題",date:"2025/01/14",importance:"A"},
+
       ]}
     />
   );

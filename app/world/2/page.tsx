@@ -6,7 +6,8 @@ export default function Worlds() {
       explain={
         //ここに概要欄の内容を入力 JSX（ヒント＆答えは別箇所）
         <><p>作者の操作ミスによりクラフターズコロニーから消滅した幻のマップ</p>
-        <p>このマップはOneDriveにて公開中</p></>
+        <p>このマップはOneDriveにて公開中</p>
+        <h2>※修正情報も紛失</h2></>
       }
       //ヒントは配列内のオブジェクトに記述
       //title・・・常に表示される文
@@ -22,7 +23,7 @@ export default function Worlds() {
       // date 修正日
       // importance バグの重要度（A＝非常に重大、B＝通常の問題、C＝軽微な問題）
       bugsFix={[
-        {title:"民家の隣の小道から未解放エリアへ行けてしまう問題",date:"不明",importance:"A"},
+
       ]}
     />
   );
