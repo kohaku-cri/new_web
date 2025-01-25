@@ -122,7 +122,7 @@ export const mapdata: Map[] = [
     distributionLink: "https://minecraft-mcworld.com/45870/",
     alt: "トロールMAP マインクラフト脱出マップ",
     date: "2023/9/10",
-    visibility: "public",
+    visibility: "local",
     copyRight: [],
   },
   {
@@ -146,7 +146,7 @@ export const mapdata: Map[] = [
     distributionLink: "https://minecraft-mcworld.com/45197/",
     alt: "釣り人の記憶 マインクラフト脱出マップ",
     date: "2023/9/2",
-    visibility: "public",
+    visibility: "local",
     copyRight: [],
   },
 ];
