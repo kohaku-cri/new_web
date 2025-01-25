@@ -209,7 +209,14 @@
   padding: 5px 10px;
   text-align: center;
 }
-
+.link {
+  border-bottom: 1px solid var(--colorColor);
+}
+.link:hover {
+  border-bottom: 1px solid var(--linkColor);
+  color: var(--linkColor);
+  transition: 0.3s;
+}
 .public {
   background-color: var(--green);
 }
@@ -224,7 +231,7 @@
 .bugsFixHistory {
   margin-top: 140px;
 }
-.tip{
+.tip {
   font-size: 15px;
 }
 .a {
@@ -236,7 +243,7 @@
 .c {
   background-color: var(--green);
 }
-.noBug{
+.noBug {
   margin-top: 20px;
 }
 .bugsFixHistory th,
