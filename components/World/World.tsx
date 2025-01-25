@@ -94,11 +94,13 @@ export default function World(props: props) {
                 ) : null}
               </tr>
             </table>
-            <ListButton
-              url={foundData?.distributionLink || "notfound"}
-              title="配布ページへ【外部】"
-              visibility={foundData?.visibility || "public"}
-            />
+            {props.hint.length > 0 && (
+              <ListButton
+                url={foundData?.distributionLink || "notfound"}
+                title="配布ページへ【外部】"
+                visibility={foundData?.visibility || "public"}
+              />
+            )}
             <div className={style.explain}>
               <div>{props.explain}</div>
             </div>
@@ -174,7 +176,12 @@ export default function World(props: props) {
                     })}
                   </table>
                   {/* こちらをリンクにしお知らせ記事に */}
-                  <p className={style.tip}>※重要度と修正日については<Link href="/news/2025-1-25-01" className={style.link}>こちら</Link></p>
+                  <p className={style.tip}>
+                    ※重要度と修正日については
+                    <Link href="/news/2025-1-25-01" className={style.link}>
+                      こちら
+                    </Link>
+                  </p>
                 </div>
               ) : (
                 <p className={style.noBug}>修正されたバグはありません</p>
