@@ -62,7 +62,7 @@ export const mapdata: Map[] = [
     distributionLink: "https://minecraft-mcworld.com/61174/",
     alt: "教室10《8番出口オマージュ》 マインクラフト脱出マップ",
     date: "2024/1/23",
-    visibility: "public",
+    visibility: "timeLocal",
     copyRight: ["ロゴの一部にicooon-monoのイラスト素材を使用"],
   },
   {
