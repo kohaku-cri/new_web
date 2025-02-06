@@ -7,11 +7,13 @@ export default function GoatCounterTracker() {
   const pathname = usePathname();
 
   useEffect(() => {
+    /* eslint-disable @typescript-eslint/no-explicit-any */
     if (typeof window !== "undefined" && (window as any).goatcounter) {
       (window as any).goatcounter.count({
         path: pathname,
       });
     }
+    /* eslint-enable @typescript-eslint/no-explicit-any */
   }, [pathname]);
 
   return (
