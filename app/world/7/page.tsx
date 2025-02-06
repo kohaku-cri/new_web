@@ -16,7 +16,7 @@ export default function Worlds() {
 
       //img・・・画像のリンクを入力（省略可能）　※imgの使用にはaltの入力が必要
       hint={[]}
-      // 空配列の場合は情報は「修正されたバグはありません」と表示される
+      // 空配列の場合は「修正されたバグはありません」と表示される
       // title バグ修正の概要
       // date 修正日
       // importance バグの重要度（A＝非常に重大、B＝通常の問題、C＝軽微な問題）
@@ -26,7 +26,9 @@ export default function Worlds() {
         {title:"switchやスマホにて黒板などの一部ブロックが正しく表示されない問題",date:"",importance:"A"},
         {title:"ver1.21.20アップデートに対応（応急的修正）",date:"",importance:"A"},
         {title:"一部の異変が機能していない問題",date:"",importance:"B"},
-
+        {title:"表記ミスと誤字の修正と分かりづらい表現の改善",date:"2025/02/07",importance:"C"},
+        {title:"クリア後使用可能なアイテムが正しく配置されていなかった問題",date:"〃",importance:"A"},
+        {title:"応急的修正を完全に修正",date:"〃",importance:"B"},
       ]}
     />
   );

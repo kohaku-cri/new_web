@@ -20,6 +20,8 @@ export default function NewsText() {
           <h3>○修正日</h3>
           <p>-（ハイフン）の意味</p>
           <p>修正日の記録をしていないもの（修正日不明）</p>
+          <p className={style.marTop20}>〃の意味</p>
+          <p>直近の日付と同じ日に修正されたもの（同日修正）</p>
         </>
       }
     />
