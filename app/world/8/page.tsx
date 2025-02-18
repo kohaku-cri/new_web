@@ -57,7 +57,7 @@ export default function Worlds() {
         {title:"一部の天井や壁に穴があいている問題",date:"",importance:"C"},
         {title:"一部アスレのナビ追加と簡易化",date:"",importance:"B"},
         {title:"巨木からアスレにより青の家の屋根へと渡れてしまう問題",date:"2025/01/14",importance:"A"},
-
+        {title:"軽微な問題（計8カ所）",date:"2025/2/18",importance:"C"}
       ]}
     />
   );
