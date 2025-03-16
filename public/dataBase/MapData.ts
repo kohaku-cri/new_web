@@ -134,7 +134,7 @@ export const mapdata: Map[] = [
     distributionLink: "https://1drv.ms/u/s!AqPQLDi4YQ-Tgw8EbdEPCGdA2jSe?e=ctqyJ0",
     alt: "とある民家からの脱出 マインクラフト脱出マップ",
     date: "2024/9/04",
-    visibility: "public",
+    visibility: "local",
     copyRight: [],
   },
   {
