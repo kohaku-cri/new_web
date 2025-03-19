@@ -1,9 +1,9 @@
-import style from "@/components/Tools/tools.module.css";
+import style from "@/components/ToolList/ToolList.module.css";
 import { pageName } from "@/public/dataBase/pageName";
 
 export const metadata = {
   title: `ツール${pageName}`,
-  description: "すべてのお知らせ記事を一覧表示",
+  description: "すべてのツールを一覧表示",
 };
 
 export default function Tools() {

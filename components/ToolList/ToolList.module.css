@@ -1,0 +1,46 @@
+.main {
+  margin-top: 300px;
+  min-height: 100vh;
+}
+
+
+.mapList h2 {
+  border-bottom: 1px solid var(--colorColor);
+  padding: 10px 20px;
+}
+.mapList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.map {
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 70px;
+  position: relative;
+  z-index: 1;
+}
+.map h2 {
+  font-size: 19px;
+}
+.map p {
+  margin-top: 10px;
+  font-size: 13px;
+}
+.visibility {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  padding: 2px 10px;
+  border-radius: 2px;
+}
+.public {
+  background-color: var(--green);
+}
+.timeLocal {
+  background-color: var(--purple);
+}
+.local {
+  background-color: var(--red);
+}

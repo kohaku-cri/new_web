@@ -26,9 +26,6 @@ export function Header() {
         <Link href="/tools" className={style.link}>
           ツール
         </Link>
-        <Link href="/FQA" className={style.link}>
-          FQA
-        </Link>
       </div>
       <div className={style.phoneHeader}>
         <Image
