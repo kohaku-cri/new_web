@@ -9,13 +9,13 @@
   text-align: left;
   padding: 10px 0;
 }
-.tags{
+.tags {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   margin: 0 !important;
 }
-.tag{
+.tag {
   margin-left: 10px;
   background-color: var(--gray);
   border-radius: 20px;
@@ -63,6 +63,9 @@
 .marTop110 {
   margin-top: 110px !important;
 }
+.marTop80 {
+  margin-top: 80px !important ;
+}
 .marTop40 {
   margin-top: 40px !important ;
 }
@@ -70,6 +73,13 @@
   margin-top: 20px !important ;
 }
 .link {
+  border-bottom: 1px solid var(--colorColor);
+}
+.border {
+  padding: 10px 5px;
+  border: 1px solid var(--colorColor);
+}
+.borderBottom {
   border-bottom: 1px solid var(--colorColor);
 }
 .link:hover {
