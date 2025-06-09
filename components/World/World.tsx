@@ -178,7 +178,7 @@ export default function World(props: props) {
                   {/* こちらをリンクにしお知らせ記事に */}
                   <p className={style.tip}>
                     ※重要度と修正日については
-                    <Link href="/news/2025-1-25-01" className={style.link}>
+                    <Link href="/news/2025-01-25-01" className={style.link}>
                       こちら
                     </Link>
                   </p>
