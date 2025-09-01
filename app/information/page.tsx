@@ -2,7 +2,7 @@ import style from "@/components/News/news.module.css";
 import { pageName } from "@/public/dataBase/pageName";
 
 export const metadata = {
-  title: `ガイドライン${pageName}`,
+  title: `配信者ガイドライン${pageName}`,
 };
 
 export default function information() {
@@ -10,7 +10,7 @@ export default function information() {
     <div className={style.main}>
       <div>
         <div>
-          <h2>｜ガイドライン</h2>
+          <h2>｜配信者ガイドライン</h2>
           <p>
             配布ページなどに個々の事項についての特別の記載がない限り下記のガイドラインを適用します
           </p>
