@@ -15,7 +15,7 @@ export default function NewsText() {
           <NewsImg link="img/bugFix.png"/>
           <h3>○重要度</h3>
           <p>A┃非常に重大な問題</p>
-          <p>B┃AとCの中間に相当する問題</p>
+          <p>B┃一般的な問題</p>
           <p>C┃軽微な問題</p>
           <h3>○修正日</h3>
           <p>-（ハイフン）の意味</p>
