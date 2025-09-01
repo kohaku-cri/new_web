@@ -18,7 +18,7 @@ export function Header() {
           ホーム
         </Link>
         <Link href="/information" className={style.link}>
-          ガイドライン
+          配信者ガイドライン
         </Link>
         <Link href="/news" className={style.link}>
           お知らせ一覧
