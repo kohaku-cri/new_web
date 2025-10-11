@@ -147,7 +147,7 @@ export default function World(props: props) {
             </div>
 
             <div className={style.bugsFixHistory} id="bugsFixHistory">
-              <h2>｜修正済みのバグ</h2>
+              <h2>｜バグ修正情報</h2>
               {props.bugsFix.length > 0 ? (
                 <div>
                   <table>

@@ -1,5 +1,10 @@
 import World from "@/components/World/World";
 
+export const metadata = {
+  description:
+    "8作目ハロウィン脱出マップ",
+};
+
 export default function Worlds() {
   return (
     <World
@@ -23,7 +28,7 @@ export default function Worlds() {
         {title:"看板の謎",open:"どこかの巨木に少し色合いの違うブロックがあるような・・"},
         {title:"ボタンの謎（緑の鍵使用後）①",open:"様々なブロックにボタンがついているようだ"},
         {title:"ボタンの謎（緑の鍵使用後）②",open:"ボタンを正しい順番に押せば何かが起こりそうだ・・・"},
-        {title:"ボタンの謎（緑の鍵使用後）③",open:"順番を示唆するものがどこかにないだろうか"},
+        {title:"ボタンの謎（緑の鍵使用後）③",open:"順番を示唆するものがどこかにないだろうか、山が怪しい"},
         {title:"干し草の俵集め①",open:"畑に５つ置かれているらしい"},
         {title:"干し草の俵集め②",open:"畑は１か所ではないようだ"},
         {title:"干し草の俵集め③",open:"３人称視点で上から探してみると多少見つけやすいかもしれない・・・"},
@@ -57,7 +62,9 @@ export default function Worlds() {
         {title:"一部の天井や壁に穴があいている問題",date:"",importance:"C"},
         {title:"一部アスレのナビ追加と簡易化",date:"",importance:"B"},
         {title:"巨木からアスレにより青の家の屋根へと渡れてしまう問題",date:"2025/01/14",importance:"A"},
-        {title:"軽微な問題（計8カ所）",date:"2025/2/18",importance:"C"}
+        {title:"軽微な問題（計8カ所）",date:"2025/2/18",importance:"C"},
+        {title:"アスレのバランスを調整と軽微な問題の修正",date:"2025/10/11",importance:"C"},
+        {title:"いくつかの小ネタを追加",date:"〃",importance:"C"},
       ]}
     />
   );
