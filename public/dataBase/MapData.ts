@@ -133,7 +133,7 @@ export const mapdata: Map[] = [
     youtube: "https://www.youtube.com/embed/uBVeSxIJMOo?si=Vr8BEONaVfjNH8fz",
     distributionLink: "https://1drv.ms/u/s!AqPQLDi4YQ-Tgw8EbdEPCGdA2jSe?e=ctqyJ0",
     alt: "とある民家からの脱出 マインクラフト脱出マップ",
-    date: "2024/9/04",
+    date: "2023/9/04",
     visibility: "local",
     copyRight: [],
   },
@@ -155,3 +155,4 @@ export const imgSize = {
   width: aspect,
   height: aspect * 0.5625,
 };
+
