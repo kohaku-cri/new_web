@@ -65,6 +65,7 @@ export default function Worlds() {
         {title:"軽微な問題（計8カ所）",date:"2025/2/18",importance:"C"},
         {title:"アスレのバランスを調整と軽微な問題の修正",date:"2025/10/11",importance:"C"},
         {title:"いくつかの小ネタを追加",date:"〃",importance:"C"},
+        {title:"非常に軽微なバランス調整",date:"2025/10/19",importance:"C"},
       ]}
     />
   );
