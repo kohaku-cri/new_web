@@ -67,6 +67,7 @@ export default function Worlds() {
         {title:"いくつかの小ネタを追加",date:"〃",importance:"C"},
         {title:"非常に軽微なバランス調整",date:"2025/10/19",importance:"C"},
         {title:"紙を２枚以上保有すると削除されてしまう問題",date:"2025/10/28",importance:"C"},
+        {title:"アスレのガイド強化",date:"〃",importance:"C"},
       ]}
     />
   );
