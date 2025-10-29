@@ -1,4 +1,3 @@
-import { ListButton } from "@/components/Button/LinkButton";
 import World from "@/components/World/World";
 
 export default function Worlds() {
@@ -38,6 +37,7 @@ export default function Worlds() {
         {title:"ポーションの謎",open:"跳躍ポーションレベル2を醸造し２階のアメジスト天井にある樽を開ける",hint:false},
         {title:"海に帰りたい魚",open:"ありがとう案件と呼ばれるもの"},
         {title:"海に帰りたい魚",open:"魚をトイレに流す",hint:false},
+
         // ---
         {title:"かぼちゃの謎",open:"１階にヒントがあるようだ"},
         {title:"かぼちゃの謎",open:"MOBの頭の謎を解いた部屋の前のカボチャの種類順",hint:false},
