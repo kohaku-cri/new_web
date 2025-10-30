@@ -68,6 +68,7 @@ export default function Worlds() {
         {title:"非常に軽微なバランス調整",date:"2025/10/19",importance:"C"},
         {title:"紙を２枚以上保有すると削除されてしまう問題",date:"2025/10/28",importance:"C"},
         {title:"アスレのガイド強化",date:"〃",importance:"C"},
+        {title:"クリア部屋からコマンド部屋に入れてしまう問題",date:"2025/10/30",importance:"A"},
       ]}
     />
   );
