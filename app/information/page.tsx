@@ -108,7 +108,7 @@ export default function information() {
             <p className={style.marTop20}>
               例文：
               <br />
-              "今後も含め私のアカウントで行うlive配信において、作者参加を望みません。"
+              “今後も含め私のアカウントで行うlive配信において、作者参加を望みません。”
             </p>
             <p className={style.marTop40}>
               補足：
