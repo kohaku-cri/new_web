@@ -1,0 +1,12 @@
+.FixedDisplayBox {
+  z-index: 300;
+  position: fixed;
+  top: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 5px solid var(--red);
+  background-color: var(--backgroundColor);
+  width: 120vh;
+  padding-top: 5px;
+    padding-bottom: 5px;
+}
