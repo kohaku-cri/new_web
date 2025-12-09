@@ -43,9 +43,23 @@
 .green {
   color: var(--green);
 }
+.yellow {
+  color: var(--yellow);
+}
 .lightBlue {
   color: var(--lightBlue);
 }
+
+.backRed {
+  background-color: var(--red);
+}
+.backOrange {
+  background-color: var(--orange);
+}
+.backGreen {
+  background-color: var(--green);
+}
+
 @media screen and (max-width: 800px) {
   .main div {
     margin: 0 10px;
@@ -62,6 +76,9 @@
 }
 .marTop110 {
   margin-top: 110px !important;
+}
+.marTop60 {
+  margin-top: 60px !important ;
 }
 .marTop40 {
   margin-top: 40px !important ;
