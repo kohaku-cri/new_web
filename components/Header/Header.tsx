@@ -17,7 +17,7 @@ export function Header() {
         <Link href="/" className={style.link}>
           ホーム
         </Link>
-        <Link href="/information" className={style.link}>
+        <Link href="/guideline" className={style.link}>
           各種ガイドライン
         </Link>
         <Link href="/news" className={style.link}>
@@ -52,7 +52,7 @@ export function Header() {
           <Link href="/" onClick={MenuClose}>
             ホーム
           </Link>
-          <Link href="/information" onClick={MenuClose}>
+          <Link href="/guideline" onClick={MenuClose}>
             各種ガイドライン
           </Link>
           <Link href="/news" onClick={MenuClose}>
