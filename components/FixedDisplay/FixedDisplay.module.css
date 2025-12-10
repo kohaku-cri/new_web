@@ -1,5 +1,5 @@
 .FixedDisplayBox {
-  z-index: 2;
+  z-index: 102;
   position: fixed;
   top: 70px;
   left: 50%;
