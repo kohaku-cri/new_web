@@ -27,7 +27,7 @@ export default function information() {
           <div>
             <h3 className={style.marTop60}>
               ○
-              配布ページに別の規定がない点について、本ページの各種ガイドラインを適用します。
+              配布ページに別の規定がない点について、本ページのガイドラインを適用します。
             </h3>
             <h3 className={style.marTop60}>○ 作品ガイドライン</h3>
             <table>
