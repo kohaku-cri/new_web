@@ -53,7 +53,7 @@ export function Header() {
             ホーム
           </Link>
           <Link href="/information" onClick={MenuClose}>
-            配信者ガイドライン
+            各種ガイドライン
           </Link>
           <Link href="/news" onClick={MenuClose}>
             お知らせ一覧
