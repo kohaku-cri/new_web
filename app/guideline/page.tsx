@@ -25,16 +25,18 @@ export default function information() {
       <div className={style.main}>
         <div>
           <div>
-            <h3 className={style.marTop60}>
+            <h3 className={style.marTop110}>
               ○
               配布ページに別の規定がない点について、本ページのガイドラインを適用します。
             </h3>
             <h3 className={style.marTop60}>○ 作品ガイドライン</h3>
+            <h3 className={style.marTop60}>用語</h3>
+            <p>
+              二次配布：改造の有無に関わらず、作品のデータの全部または一部を多数の者または一般に対して頒布することを指します。
+              <br />
+              ※この規定は改造を許諾するものではありません。改造については言及を避けております。
+            </p>
             <table>
-              <tr>
-                <th>自作発言</th>
-                <td className={style.backRed}>NG</td>
-              </tr>
               <tr>
                 <th>二次配布</th>
                 <td className={style.backRed}>NG</td>
@@ -43,7 +45,7 @@ export default function information() {
             {/* ここから配信者向けガイドライン */}
             <h3 className={style.marTop110}>○ 配信者向けガイドライン</h3>
             <p className={style.marTop60}>
-              まず初めに作品の配信を検討してくださりありがとうございます。
+              初めに作品の配信を検討していただきありがとうございます。
             </p>
             <p>
               本ガイドラインは配信者さんに制約を課すことを目的としておらず、「こんなこともやっていいよ♡」
