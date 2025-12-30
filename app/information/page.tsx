@@ -11,7 +11,7 @@ export default function information() {
     <div className={style.main}>
       <h2>ガイドラインページのURLは変更されました。</h2>
       {/* <p>5秒後に新URLへリダイレクトします...</p> */}
-      <ListButton url="/guideline" visibility="" title="移動する" />
+      <ListButton url="/guideline" visibility="" title="新ページへ移動する" />
     </div>
   );
 }
