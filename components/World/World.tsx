@@ -64,11 +64,7 @@ export default function World(props: props) {
             <div className={style.background}>
               <div className={style.copyRightList}>
                 <h2>権利情報（敬称略）</h2>
-                {foundData?.copyRight.length == 0 && (
-                  <p>
-                    本作に使用している外部素材はありません（ロゴのフォントを除く）
-                  </p>
-                )}
+                {foundData?.copyRight.length == 0 && null}
                 {foundData?.copyRight.map((item) => {
                   return <p key={item}>{item}</p>;
                 })}
