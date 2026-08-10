@@ -10,7 +10,7 @@ export const metadata = {
 export default function information() {
   return (
     <>
-      <FixedDisplay
+      {/* <FixedDisplay
         element={
           <>
             <p>🚧 現在ガイドラインの改定作業中です。🚧</p>
@@ -21,13 +21,13 @@ export default function information() {
             </p>
           </>
         }
-      />
+      /> */}
       <div className={style.main}>
         <div>
           <div>
             <h3 className={style.marTop60}>
               ○
-              配布ページに別の規定がない点について、本ページのガイドラインを適用します。
+              配布ページに別の定めがない点について、本ページのガイドラインを適用します。
             </h3>
             <h3 className={style.marTop60}>｜ 作品ガイドライン</h3>
             <table>
@@ -36,18 +36,14 @@ export default function information() {
                 <td className={style.backRed}>NG</td>
               </tr>
             </table>
-            <p>※作品の全部または一部を改造の有無にかかわらず、配布すること。</p>
-            <p>※ごく少数の範囲で共有することは二次配布とみなしません。</p>
+            <p>※私的利用外であって、なんらかの理由により、ごく少数の範囲で共有する場合は二次配布とみなしません。</p>
             <h3 className={style.marTop60}>免責</h3>
             <p>
-              作者は作品に関するあらゆる保証（例：バグ修正、質問対応などを含むあらゆる保証）を義務として負わず、
+              作品への質問対応や不具合修正は可能な範囲で行う方針ですが、その対応や動作を保証するものではありません。
               <br />
-              また作品に関連して生じた事象について、いかなる責任も負うことはできません。
+              作品に関連して生じた事象について、責任を負うことはできません。
             </p>
             <p>ご了承ください。</p>
-            <p>
-              ※保証については、限界に達しない限り対応するよう努力しています。
-            </p>
             {/* ここから配信者向けガイドライン */}
             <h3 className={style.marTop110}>｜ 配信者向けガイドライン</h3>
             <p className={style.marTop60}>
@@ -77,7 +73,7 @@ export default function information() {
                 <td className={style.backOrange}>任意</td>
               </tr>
               <tr>
-                <th>配信報告</th>
+                <th>作者への配信報告</th>
                 <td className={style.backOrange}>任意</td>
               </tr>
             </table>
@@ -123,19 +119,19 @@ export default function information() {
               ご不明点やその他ご感想などありましたらXのDMへお気軽にご連絡ください。
             </p>
             {/* ここからその他のガイドライン */}
-            <h3 className={style.marTop110}>○ その他の規定</h3>
+            <h3 className={style.marTop110}>○ その他</h3>
 
             <h3 className={style.marTop60}>リンク</h3>
             <p>本サイトへのリンクはご自由に行っていただいて構いません。</p>
             <h3 className={style.marTop60}>ガイドラインの改定</h3>
             <p>本ガイドラインは予告なく改定される場合があります。</p>
             <p>
-              改定の際は小さな変更であっても「ルール改定」のタグを付けた、お知らせ記事を掲載します。
+              改定の際は小さな変更（誤字や表現の修正を除く）であっても「ルール改定」のタグを付けた、お知らせ記事を掲載します。
             </p>
             <p>
-              また改定前に行われた配信が改定後のガイドラインの影響を受けることはありません。
+              また改定前に行われた配信等が改定後のガイドラインの影響を受けることはありません。
             </p>
-            <p className={style.marTop110}>最終更新：2026/2/3</p>
+            <p className={style.marTop110}>最終更新日：2026/8/10</p>
           </div>
         </div>
       </div>
