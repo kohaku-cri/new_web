@@ -40,7 +40,18 @@ export const mapdata: Map[] = [
   //youtubeリンクは埋め込みリンクのリンクを使用すること (URL部分を選択しマウスを離さずにctrl+c)
 
   //copyRight・・・権利情報を記入(配列) ※空配列の場合は何も表示されない
-
+  {
+    mapNum: "9",
+    mapName: "絶壁の漂流地",
+    mapImgLink: `${BASE_PATH}/img/9.jpg`,
+    link: "/world/9",
+    youtube: "",
+    distributionLink: "https://minecraft-mcworld.com/251542/",
+    alt: "絶壁の漂流地 マインクラフト脱出マップ",
+    date: "2026/8/23",
+    visibility: "public",
+    copyRight: [],
+  },
   {
     mapNum: "8",
     mapName: "魔法使いと空の孤島",
@@ -131,7 +142,8 @@ export const mapdata: Map[] = [
     mapImgLink: `${BASE_PATH}/img/2.jpg`,
     link: "/world/2",
     youtube: "https://www.youtube.com/embed/uBVeSxIJMOo?si=Vr8BEONaVfjNH8fz",
-    distributionLink: "https://1drv.ms/u/s!AqPQLDi4YQ-Tgw8EbdEPCGdA2jSe?e=ctqyJ0",
+    distributionLink:
+      "https://1drv.ms/u/s!AqPQLDi4YQ-Tgw8EbdEPCGdA2jSe?e=ctqyJ0",
     alt: "とある民家からの脱出 マインクラフト脱出マップ",
     date: "2023/9/04",
     visibility: "local",
@@ -155,4 +167,3 @@ export const imgSize = {
   width: aspect,
   height: aspect * 0.5625,
 };
-
