@@ -50,7 +50,7 @@ export const mapdata: Map[] = [
     distributionLink: "https://minecraft-mcworld.com/105151/",
     alt: "魔法使いと空の孤島 マインクラフト脱出マップ",
     date: "2024/11/4",
-    visibility: "timeLocal",
+    visibility: "public",
     copyRight: ["ロゴの一部にicooon-monoのイラスト素材を使用"],
   },
   {
@@ -62,7 +62,7 @@ export const mapdata: Map[] = [
     distributionLink: "https://minecraft-mcworld.com/61174/",
     alt: "教室10《8番出口オマージュ》 マインクラフト脱出マップ",
     date: "2024/1/23",
-    visibility: "timeLocal",
+    visibility: "public",
     copyRight: ["ロゴの一部にicooon-monoのイラスト素材を使用"],
   },
   {
@@ -74,7 +74,7 @@ export const mapdata: Map[] = [
     distributionLink: "https://minecraft-mcworld.com/56665/",
     alt: "雪夜の山峡 マインクラフト脱出マップ",
     date: "2023/12/23",
-    visibility: "timeLocal",
+    visibility: "public",
     copyRight: [],
   },
   {
@@ -86,7 +86,7 @@ export const mapdata: Map[] = [
     distributionLink: "https://minecraft-mcworld.com/49583/",
     alt: "ハロウィンハウスからの脱出 マインクラフト脱出マップ",
     date: "2023/10/26",
-    visibility: "timeLocal",
+    visibility: "public",
     copyRight: [],
   },
   {
@@ -110,7 +110,7 @@ export const mapdata: Map[] = [
     distributionLink: "https://minecraft-mcworld.com/46698/",
     alt: "謎めく研究所からの脱出 マインクラフト脱出マップ",
     date: "2023/10/6",
-    visibility: "timeLocal",
+    visibility: "public",
     copyRight: ["マップ内の効果音と音楽に魔王魂の素材を使用"],
   },
   {
