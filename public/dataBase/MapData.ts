@@ -45,7 +45,7 @@ export const mapdata: Map[] = [
     mapName: "絶壁の漂流地",
     mapImgLink: `${BASE_PATH}/img/9.jpg`,
     link: "/world/9",
-    youtube: "",
+    youtube: "https://www.youtube.com/embed/XFWUB_RcDT4?si=ugfv88Jlou5Uxcxd",
     distributionLink: "https://minecraft-mcworld.com/251542/",
     alt: "絶壁の漂流地 マインクラフト脱出マップ",
     date: "2026/8/23",
